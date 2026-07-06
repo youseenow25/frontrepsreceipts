@@ -6,6 +6,15 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Consolidate duplicate legal pages (both variants were indexed, diluting each other)
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
+      { source: '/terms', destination: '/terms-of-service', permanent: true },
+
+      // Footer used to link to brands that don't exist — catch stragglers Google already crawled
+      { source: '/brands/supreme', destination: '/brands', permanent: true },
+      { source: '/brands/nike_snkrs', destination: '/brands/nike', permanent: true },
+      { source: '/brands/yeezy_gap', destination: '/brands/adidas', permanent: true },
+
       // Old domain path redirects (repsreceipts.com → repsreceipt.com already handled at DNS level)
       // These handle URL structure changes that caused 119 404s in Google Search Console
 
@@ -78,8 +87,6 @@ const nextConfig = {
       { source: '/email-receipt/vivienne-westwood', destination: '/email-receipt/vivienne_westwood', permanent: true },
     ]
   },
-}
-
   async headers() {
     return [
       {

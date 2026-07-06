@@ -50,8 +50,8 @@ export default function RefundPolicy() {
           </div>
 
           <div style={{ marginTop: 48, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-            <Link href="/privacy" style={{ color: '#5462ea', fontSize: '0.9rem' }}>Privacy Policy</Link>
-            <Link href="/terms" style={{ color: '#5462ea', fontSize: '0.9rem' }}>Terms of Service</Link>
+            <Link href="/privacy-policy" style={{ color: '#5462ea', fontSize: '0.9rem' }}>Privacy Policy</Link>
+            <Link href="/terms-of-service" style={{ color: '#5462ea', fontSize: '0.9rem' }}>Terms of Service</Link>
           </div>
         </section>
 

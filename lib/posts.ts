@@ -11,7 +11,7 @@ export const posts: Post[] = [
     slug: 'how-to-generate-luxury-brand-receipt',
     title: 'How to Generate a Luxury Brand Receipt: Complete Guide',
     description: 'Step-by-step guide to generating accurate receipts for StockX, Louis Vuitton, Nike, Farfetch, Gucci and 70+ brands. What fields each receipt needs and why.',
-    date: '2026-06-01',
+    date: '2026-03-28',
     content: `
 <h2>Why People Need a Duplicate Receipt</h2>
 <p>Losing a confirmation email is more common than most people admit — a spam filter catches it, a phone gets replaced, or an account gets deleted. Beyond lost emails, there are plenty of legitimate reasons to need a receipt document: insurance valuations for high-value items, expense reporting for business purchases, providing proof of retail price when reselling, or warranty registration that requires the original purchase date and store.</p>
@@ -40,7 +40,7 @@ export const posts: Post[] = [
     slug: 'stockx-receipt-generator',
     title: 'StockX Receipt: What It Looks Like and How to Recreate It',
     description: 'Everything about the StockX order confirmation receipt — what fields it contains, how the bid/ask system affects it, and how to generate a 1:1 copy with RepsReceipts.',
-    date: '2026-06-02',
+    date: '2026-03-29',
     content: `
 <h2>StockX Is Not a Normal Store</h2>
 <p>Unlike buying from Nike.com where the price is fixed, StockX works like a stock exchange. You place a bid or accept an ask, and when they match, the transaction clears. This means your StockX receipt isn't a simple "you paid £120 for these trainers" document — it reflects a market transaction. The confirmation includes your winning bid price, the buyer premium StockX charges on top (typically 9–12%), payment processing fees, and the final total you were actually charged.</p>
@@ -61,7 +61,7 @@ export const posts: Post[] = [
     slug: 'nike-receipt-template',
     title: 'Nike Receipt Template: Nike.com, SNKRS App, and In-Store — What\'s Different',
     description: 'Nike has three different receipt formats depending on where you buy. Learn what each looks like and how to generate a 1:1 Nike receipt for any channel.',
-    date: '2026-06-03',
+    date: '2026-03-30',
     content: `
 <h2>Three Nike Channels, Three Receipt Formats</h2>
 <p>Most people don't realise that a Nike.com purchase confirmation, a Nike SNKRS app confirmation, and an in-store Nike receipt all look different. Nike.com sends a branded HTML email with the full order layout. The SNKRS app sends a more minimal confirmation that references the specific drop or release. In-store receipts are printed thermal paper with a different field arrangement. Knowing which format you need matters if you're providing documentation for a resale or insurance claim.</p>
@@ -81,7 +81,7 @@ export const posts: Post[] = [
     slug: 'louis-vuitton-receipt-generator',
     title: 'Louis Vuitton Receipt: The LV Purchase Confirmation Explained',
     description: 'Louis Vuitton receipts are more formal than most brand confirmations. Here\'s what LV receipts contain, how they\'re formatted, and how to generate a 1:1 copy.',
-    date: '2026-06-04',
+    date: '2026-03-31',
     content: `
 <h2>How Louis Vuitton Handles Purchase Confirmation</h2>
 <p>Louis Vuitton treats the purchase confirmation as an extension of the brand experience. The email is elegant — white background, the LV monogram subtle in the header, formal language ("Dear [Name], thank you for your purchase at Louis Vuitton"). Unlike most e-commerce confirmations that feel transactional, LV's receipt reads more like correspondence from a maison. This matters practically: if you're recreating the document for resale or insurance, it needs to match that elevated format, not just the data.</p>
@@ -101,7 +101,7 @@ export const posts: Post[] = [
     slug: 'farfetch-receipt-template',
     title: 'Farfetch Receipt: Why It\'s More Complex Than a Normal Order Confirmation',
     description: 'Farfetch connects buyers with boutiques worldwide, which makes its receipts more complex. Learn about boutique names, import duties, and how to generate a 1:1 Farfetch receipt.',
-    date: '2026-06-05',
+    date: '2026-04-01',
     content: `
 <h2>Farfetch Isn't a Retailer — It's a Marketplace for Boutiques</h2>
 <p>This distinction changes what a Farfetch receipt looks like. When you buy on Farfetch, you're buying from an individual boutique — in Milan, Tokyo, or New York — and Farfetch handles the platform, payment, and logistics. Your order confirmation reflects this: it shows the Farfetch logo and order number at the top, but also names the originating boutique. If your item ships from overseas, the receipt may include import duty estimates and a note about customs handling.</p>
@@ -121,7 +121,7 @@ export const posts: Post[] = [
     slug: 'canada-goose-receipt-generator',
     title: 'Canada Goose Receipt: Warranty Registration and Why the Receipt Matters',
     description: 'Canada Goose\'s lifetime warranty makes the purchase receipt more important than most brands. Here\'s what the CG order confirmation looks like and how to generate a copy.',
-    date: '2026-06-06',
+    date: '2026-04-02',
     content: `
 <h2>Canada Goose Offers a Lifetime Warranty — But You Need the Receipt</h2>
 <p>Canada Goose backs its products with a lifetime warranty against manufacturing defects. That warranty requires proof of purchase from an authorised retailer. If you bought online from canadagoose.com and your original confirmation email is gone, you lose that warranty access unless you can provide documentation. This is one of the most concrete reasons why having a receipt copy matters for this specific brand — the stakes are higher than for a pair of fast-fashion jeans.</p>
@@ -141,7 +141,7 @@ export const posts: Post[] = [
     slug: 'gucci-receipt-generator',
     title: 'Gucci Receipt Generator: What an Authentic Gucci Confirmation Looks Like',
     description: 'Gucci receipts are formally structured with VAT breakdowns and client references. Learn what they contain and how to generate a 1:1 Gucci purchase receipt.',
-    date: '2026-06-07',
+    date: '2026-04-03',
     content: `
 <h2>Gucci and the Client Relationship</h2>
 <p>Gucci operates a client-relationship model — your purchase history is stored in their CRM, associated with your client profile. This means Gucci receipts sometimes reference a client number alongside the order number. It's a small but distinctive detail that generic receipt templates miss. The confirmation is addressed personally, formatted in a way that feels more like correspondence from a luxury house than a shipping notification.</p>
@@ -161,7 +161,7 @@ export const posts: Post[] = [
     slug: 'off-white-receipt-template',
     title: 'Off-White Receipt: The Industrial Aesthetic Extends to the Order Confirmation',
     description: 'Off-White order receipts have a distinct look tied to Virgil Abloh\'s design language. Here\'s what they contain and how to generate a 1:1 Off-White receipt.',
-    date: '2026-06-08',
+    date: '2026-04-04',
     content: `
 <h2>Off-White After Virgil</h2>
 <p>Virgil Abloh passed away in November 2021, and Off-White has continued under new creative direction. The brand's receipt format retains the industrial design sensibility Abloh established — quotation marks, diagonal stripe details, the HELVETICA-heavy typography. If you're recreating an Off-White receipt from before or after 2022, the format is broadly similar, though minor layout details evolved with new creative leads.</p>
@@ -181,7 +181,7 @@ export const posts: Post[] = [
     slug: 'flight-club-receipt-generator',
     title: 'Flight Club Receipt: How Consignment Receipts Differ from Marketplace Receipts',
     description: 'Flight Club is a consignment operation, not a warehouse marketplace like StockX. That changes what their receipt looks like. Here\'s everything you need to know.',
-    date: '2026-06-09',
+    date: '2026-04-05',
     content: `
 <h2>Consignment vs Marketplace: Why It Matters for Receipts</h2>
 <p>StockX holds items in its own authentication centres. Flight Club, which is owned by GOAT Group, operates partly as a consignment shop — sellers bring items to the store (or ship them), Flight Club authenticates and prices them, and sells directly. This means a Flight Club receipt reads differently from a StockX confirmation. It looks more like a traditional retail receipt, with Flight Club as the named seller, rather than a platform-fee breakdown.</p>
@@ -201,7 +201,7 @@ export const posts: Post[] = [
     slug: 'acne-studios-receipt-generator',
     title: 'Acne Studios Receipt: Scandinavian Minimalism in Every Detail Including the Confirmation',
     description: 'Acne Studios receipts reflect the brand\'s clean Swedish aesthetic. Here\'s what the order confirmation looks like and how to generate a 1:1 Acne Studios receipt.',
-    date: '2026-06-10',
+    date: '2026-04-06',
     content: `
 <h2>Acne Studios: Stockholm\'s Most Internationally Known Fashion House</h2>
 <p>Founded by Jonny Johansson in Stockholm in 1996, Acne Studios started as a denim brand (the name stands for Ambition to Create Novel Expressions) and has grown into a full luxury house known for sharp tailoring, the Face logo knit, and a restrained Scandinavian colour palette. The brand's attention to detail extends to its customer communications — the purchase confirmation email is as clean and uncluttered as the clothes.</p>
@@ -221,7 +221,7 @@ export const posts: Post[] = [
     slug: 'adidas-receipt-generator',
     title: 'Adidas Receipt Template: Three Stripes, One Order Confirmation',
     description: 'Adidas receipts differ between adidas.com, the Confirmed app, and the CONFIRMED sneaker reservation system. Here\'s what each looks like.',
-    date: '2026-06-11',
+    date: '2026-04-07',
     content: `
 <h2>Adidas and the CONFIRMED App</h2>
 <p>Like Nike's SNKRS, Adidas runs its own limited-release platform called CONFIRMED for high-demand sneaker drops — Yeezys, Pharrell collaborations, Wales Bonner editions. CONFIRMED winners receive a reservation notification different from a standard adidas.com order confirmation. Knowing which receipt format you need depends entirely on where and how you purchased.</p>
@@ -241,7 +241,7 @@ export const posts: Post[] = [
     slug: 'amazon-receipt-generator',
     title: 'Amazon Order Receipt: When the Order History Page Isn\'t Enough',
     description: 'Amazon stores every order in your account history, but sometimes you need a formatted receipt document rather than a web page. Here\'s how to generate one.',
-    date: '2026-06-12',
+    date: '2026-04-08',
     content: `
 <h2>Amazon Has the Data — But Not Always the Format You Need</h2>
 <p>Amazon's order history is comprehensive — every purchase you've ever made is logged in your account. The problem is format. Your accountant, insurer, or employer's expense system might need a traditional receipt document — a PDF or printable file — rather than a screenshot of a web page or a forwarded email. Amazon's own "invoice" option exists but isn't available for all seller types, and third-party marketplace sellers don't always provide one.</p>
@@ -261,7 +261,7 @@ export const posts: Post[] = [
     slug: 'apple-receipt-generator',
     title: 'Apple Store Receipt: App Store, Apple.com, and Retail — Three Different Formats',
     description: 'Apple generates receipts differently depending on whether you buy in-store, on Apple.com, or through the App Store. Here\'s what each looks like.',
-    date: '2026-06-13',
+    date: '2026-04-09',
     content: `
 <h2>Three Purchase Channels, Three Receipt Formats</h2>
 <p>Apple is meticulous about documentation, but the format varies by channel. An Apple.com order for a MacBook looks completely different from a Retail Store receipt, which looks different from an App Store invoice. If you need a receipt for a hardware purchase — iPhone, AirPods, Apple Watch — you're in the Apple.com or Retail Store category. App Store receipts are for digital purchases and handled through Apple ID billing.</p>
@@ -281,7 +281,7 @@ export const posts: Post[] = [
     slug: 'arcteryx-receipt-generator',
     title: "Arc'teryx Receipt: Technical Gear, Lifetime Warranty, and Why the Receipt Is Critical",
     description: "Arc'teryx's warranty and repair programme requires proof of purchase. Here's what the Arc'teryx order confirmation looks like and how to generate a copy.",
-    date: '2026-06-14',
+    date: '2026-04-10',
     content: `
 <h2>Arc'teryx RMA: The Return Merchandise Authorisation That Needs a Receipt</h2>
 <p>Arc'teryx is one of the few outdoor brands that takes warranty and repair seriously enough to have an in-house RMA (Return Merchandise Authorisation) programme. They repair, rather than replace where possible, zippers, seams, Gore-Tex membranes, and hardware on items purchased from authorised retailers. To initiate a repair claim, Arc'teryx asks for proof of purchase. Without it, you're paying for the repair rather than accessing the warranty coverage.</p>
@@ -301,7 +301,7 @@ export const posts: Post[] = [
     slug: 'argos-receipt-generator',
     title: 'Argos Receipt: Catalogue Reservations, Click & Collect, and Online Orders',
     description: 'Argos has a unique retail model that produces different receipt formats. Here\'s what Argos receipts look like and how to generate a copy.',
-    date: '2026-06-15',
+    date: '2026-04-11',
     content: `
 <h2>Argos: Britain\'s Most Distinctive Retailer</h2>
 <p>Argos operates unlike any other UK retailer. Historically built around a printed catalogue, customers would find an item number, fill out a paper slip, pay at the counter, and collect from a conveyor. That model has evolved into click-and-collect and home delivery, but Argos receipts still carry the catalogue DNA — they show the catalogue item number prominently alongside the product name, which you won't find on a John Lewis or Amazon receipt.</p>
@@ -321,7 +321,7 @@ export const posts: Post[] = [
     slug: 'balenciaga-receipt-generator',
     title: 'Balenciaga Receipt: Demna\'s World Requires Serious Documentation',
     description: 'Balenciaga is one of the most counterfeited luxury brands. A proper purchase receipt is essential for resale. Here\'s what the Balenciaga confirmation looks like.',
-    date: '2026-06-16',
+    date: '2026-04-12',
     content: `
 <h2>The Most Counterfeited Luxury Sneaker Brand</h2>
 <p>Balenciaga's Triple S and Speed Trainer are among the most counterfeited luxury sneakers in the world. The chunky silhouettes and high margins make them prime targets. When reselling Balenciaga items — particularly footwear — on Vestiaire Collective, StockX, or through private sales, a purchase receipt from balenciaga.com or an authorised retailer is one of the strongest signals of authenticity available. Platforms increasingly ask for it.</p>
@@ -341,7 +341,7 @@ export const posts: Post[] = [
     slug: 'bape-receipt-generator',
     title: 'Bape Receipt: Documenting the Drop — A Bathing Ape Purchase Confirmation',
     description: 'Bape drops sell out in minutes and resale prices surge immediately after. Here\'s what a Bape order receipt looks like and how to generate a 1:1 copy.',
-    date: '2026-06-17',
+    date: '2026-04-13',
     content: `
 <h2>Bape and the Drop Culture Documentation Problem</h2>
 <p>A Bathing Ape operates almost entirely on limited drops. Shark hoodies, Bape Sta colourways, and camo accessories release in small quantities and sell out within minutes on bape.com or at Bape stores in Tokyo, London, or New York. Because of the instant sell-out and immediate price surge on resale, buyers who get through checkout want a clean confirmation fast — and sellers who resell six months later need that original receipt to establish provenance.</p>
@@ -361,7 +361,7 @@ export const posts: Post[] = [
     slug: 'best-secret-receipt-generator',
     title: 'BestSecret Receipt: Members-Only Luxury Outlet Documentation',
     description: 'BestSecret is an invitation-only European luxury outlet. Their receipts have a specific format. Here\'s what they look like and how to generate a copy.',
-    date: '2026-06-18',
+    date: '2026-04-14',
     content: `
 <h2>BestSecret: Europe\'s Most Exclusive Outlet</h2>
 <p>BestSecret (formerly Schustermann & Borenstein) is a Munich-based members-only fashion outlet. Access requires an invitation from an existing member. The platform offers luxury and premium brands at 30–80% off retail — brands like Moncler, Brunello Cucinelli, and Loro Piana appear regularly. Because the prices are significantly below retail, the receipt is sometimes needed to explain the purchase price on expense reports or when reselling to buyers who wonder why the price seems low.</p>
@@ -381,7 +381,7 @@ export const posts: Post[] = [
     slug: 'boots-receipt-generator',
     title: 'Boots Receipt: Pharmacy, Beauty, and Advantage Card Purchases',
     description: 'Boots is the UK\'s leading pharmacy and beauty retailer. Here\'s what a Boots order confirmation looks like and how to generate a receipt copy.',
-    date: '2026-06-19',
+    date: '2026-04-15',
     content: `
 <h2>Boots: More Than a Pharmacy</h2>
 <p>Boots sells everything from prescription medication to No7 skincare to Dyson hair tools and designer fragrances. The breadth of the product range means Boots receipts appear in contexts ranging from healthcare expense claims (prescriptions, medical devices) to beauty and cosmetics returns. The Boots Advantage Card loyalty programme adds another layer — points earned on a transaction appear on receipts, which can affect the effective price calculation for expense reporting.</p>
@@ -401,7 +401,7 @@ export const posts: Post[] = [
     slug: 'breuninger-receipt-generator',
     title: 'Breuninger Receipt: Germany\'s Premier Department Store Documentation',
     description: 'Breuninger is Germany\'s most prestigious department store. Here\'s what a Breuninger order confirmation looks like and how to generate a receipt copy.',
-    date: '2026-06-20',
+    date: '2026-04-16',
     content: `
 <h2>Breuninger and German Luxury Retail</h2>
 <p>E.Breuninger GmbH & Co. is the German equivalent of Harrods — a luxury department store with flagship locations in Stuttgart, Düsseldorf, Frankfurt, and other major German cities, plus a strong online presence. Breuninger stocks international luxury brands (Moncler, Acne Studios, Ami) alongside German labels, and its receipts are formatted to German commercial standards, which means they include detailed VAT information in a format mandated by German tax law.</p>
@@ -421,7 +421,7 @@ export const posts: Post[] = [
     slug: 'broken-planet-receipt-generator',
     title: 'Broken Planet Receipt: Sustainable Drops and the Documentation They Leave Behind',
     description: 'Broken Planet Market drops sell out fast. Here\'s what their order confirmation looks like and how to generate a 1:1 Broken Planet receipt.',
-    date: '2026-06-21',
+    date: '2026-04-17',
     content: `
 <h2>Broken Planet: The UK Streetwear Brand Built on Sustainability and Scarcity</h2>
 <p>Broken Planet Market launched in London and quickly became one of the most talked-about streetwear brands among Gen Z, built on a simple formula: organic cotton, small drops, no restocks, and transparent sustainability messaging. The "Broken Planet" name references environmental destruction — and every purchase confirmation reflects this ethos, including notes about the sustainable materials used and the limited nature of the production run.</p>
@@ -441,7 +441,7 @@ export const posts: Post[] = [
     slug: 'bulgari-receipt-generator',
     title: 'Bulgari (BVLGARI) Receipt: High-Value Jewellery and Watch Purchase Documentation',
     description: 'BVLGARI receipts for jewellery and watches are formal documents that serve multiple purposes. Here\'s what they contain and how to generate a 1:1 copy.',
-    date: '2026-06-22',
+    date: '2026-04-18',
     content: `
 <h2>BVLGARI: Where Roman Heritage Meets Swiss Precision</h2>
 <p>Founded in Rome in 1884, Bulgari (stylised BVLGARI using the Latin V in place of U) is one of the world's great jewellery houses, now part of LVMH. Their products range from entry-level gold earrings at a few hundred euros to bespoke jewellery and haute horlogerie pieces costing hundreds of thousands. At these price points, purchase documentation is not optional — it's a financial and insurance necessity.</p>
@@ -461,7 +461,7 @@ export const posts: Post[] = [
     slug: 'burberry-receipt-generator',
     title: 'Burberry Receipt: British Heritage and the Purchase Confirmation',
     description: 'Burberry order receipts carry the brand\'s British luxury identity. Here\'s what they contain, how they\'re formatted, and how to generate a 1:1 copy.',
-    date: '2026-06-23',
+    date: '2026-04-19',
     content: `
 <h2>Burberry Under Daniel Lee: A New Chapter</h2>
 <p>Creative director Daniel Lee took over Burberry in 2023, modernising the brand's aesthetic with a new knight logo replacing the equestrian Thomas Burberry monogram. This transition means Burberry's visual identity — including its email receipts — changed during 2023–24. If you need to recreate a receipt from before 2023, the format used the equestrian logo and the classic Nova check visual elements. Post-2023 receipts use the new knight branding.</p>
@@ -481,7 +481,7 @@ export const posts: Post[] = [
     slug: 'cartier-receipt-generator',
     title: 'Cartier Receipt: Documenting a Jeweller of Kings Purchase',
     description: 'Cartier purchases — Love bracelets, Santos watches, Trinity rings — require serious documentation. Here\'s what the Cartier receipt looks like.',
-    date: '2026-06-24',
+    date: '2026-04-20',
     content: `
 <h2>Cartier: The Jeweller That Requires the Most Documentation</h2>
 <p>Cartier is arguably the most document-intensive retail brand in the world. When you buy a Love bracelet or a Panthère watch, Cartier provides: a purchase receipt, a certificate of authenticity, an international warranty card, and — for watches — a movement card. The receipt is just one piece of a documentation package. It's the most frequently needed piece, however, because it establishes the purchase price and date for insurance and resale purposes.</p>
@@ -501,7 +501,7 @@ export const posts: Post[] = [
     slug: 'cettire-receipt-generator',
     title: 'Cettire Receipt: Australian Luxury Platform and Global Shipping Documentation',
     description: 'Cettire offers luxury brands at competitive prices with global shipping. Here\'s what a Cettire receipt looks like and how to generate one.',
-    date: '2026-06-25',
+    date: '2026-04-21',
     content: `
 <h2>Cettire: Competitive Luxury Pricing from Melbourne</h2>
 <p>Cettire launched in Melbourne in 2017 and quickly grew into one of the most price-competitive luxury fashion platforms globally, undercutting Farfetch and Net-a-Porter on many items by sourcing from the same boutiques under different margin terms. This made Cettire popular among deal-seeking luxury shoppers — but the platform's receipt format is distinctly utilitarian compared to the luxury branding of a SSENSE or Mytheresa.</p>
@@ -521,7 +521,7 @@ export const posts: Post[] = [
     slug: 'chanel-receipt-generator',
     title: 'Chanel Receipt: The Classic Flap, Price Increases, and Why Documentation Matters',
     description: 'Chanel has raised prices dramatically since 2020. Original purchase receipts are now essential for insurance and resale. Here\'s what Chanel receipts look like.',
-    date: '2026-06-26',
+    date: '2026-04-22',
     content: `
 <h2>Chanel\'s Aggressive Price Increases Since 2020</h2>
 <p>Since 2020, Chanel has raised prices on its classic handbags multiple times per year. The Classic Flap in medium size has gone from approximately £4,200 in 2019 to over £9,000 in 2025 in the UK. The 2.55 Reissue and Boy bag have followed similar trajectories. This means a Chanel receipt from 2019 that shows a £4,200 purchase price is still relevant — it establishes what was paid — but the insurer will value the item at current replacement cost, not historical cost. Understanding this distinction matters when filing an insurance claim.</p>
@@ -541,7 +541,7 @@ export const posts: Post[] = [
     slug: 'chrono24-receipt-generator',
     title: 'Chrono24 Receipt: Watch Marketplace Purchase Documentation',
     description: 'Chrono24 is the world\'s largest watch marketplace. Here\'s how their receipt system works and how to generate a Chrono24 purchase confirmation.',
-    date: '2026-06-27',
+    date: '2026-04-23',
     content: `
 <h2>Chrono24: Where the World Buys Luxury Watches</h2>
 <p>Chrono24 is a German-based marketplace connecting buyers with over 3,000 certified dealers and private sellers globally, with 500,000+ watches listed at any time. Unlike Cartier or Rolex boutiques where you buy directly from the brand, Chrono24 is a platform — which means the receipt you receive combines Chrono24's platform documentation with the seller's own invoice. This dual-document structure is important for authentication and customs purposes.</p>
@@ -561,7 +561,7 @@ export const posts: Post[] = [
     slug: 'corteiz-receipt-generator',
     title: 'Corteiz (CRTZ) Receipt: Guerrilla Drops and the Documentation Chaos That Follows',
     description: 'Corteiz drops are chaotic by design. Here\'s what a CRTZ order confirmation looks like and how to generate a Corteiz receipt for resale or documentation.',
-    date: '2026-06-28',
+    date: '2026-04-24',
     content: `
 <h2>Corteiz: The Brand That Doesn\'t Want You to Find It</h2>
 <p>Corteiz (CRTZ), founded by Clint in London, built its entire identity around exclusivity and anti-establishment positioning. Password-protected website drops, pop-up events announced hours in advance in undisclosed London locations, swaps where customers exchange Nike and Adidas gear for CRTZ pieces. The brand actively resists conventional retail — which means the order confirmation emails, when they exist, are often sparse and functional rather than branded and polished.</p>
@@ -581,7 +581,7 @@ export const posts: Post[] = [
     slug: 'culture-kings-receipt-generator',
     title: 'Culture Kings Receipt: Australia\'s Leading Streetwear Retailer',
     description: 'Culture Kings is a major Australian streetwear retailer expanding globally. Here\'s what their order confirmation looks like and how to generate a receipt.',
-    date: '2026-06-29',
+    date: '2026-04-25',
     content: `
 <h2>Culture Kings: From Gold Coast to Global</h2>
 <p>Culture Kings started as a market stall on the Gold Coast in 2008 and has grown into Australia's largest streetwear retailer, with flagship stores in Sydney, Melbourne, and Brisbane that include barbershops and recording studios alongside the retail floor. The brand expanded into the US in 2022, opening a Las Vegas flagship. Culture Kings carries Nike, Adidas, New Era, Mitchell & Ness, and exclusive colourways unavailable elsewhere in Australia.</p>
@@ -601,7 +601,7 @@ export const posts: Post[] = [
     slug: 'de-bijenkorf-receipt-generator',
     title: 'De Bijenkorf Receipt: The Netherlands\' Luxury Department Store',
     description: 'De Bijenkorf is the premium department store of the Netherlands. Here\'s what their order confirmation looks like and how to generate a receipt copy.',
-    date: '2026-06-30',
+    date: '2026-04-26',
     content: `
 <h2>De Bijenkorf: Dutch Luxury at Its Finest</h2>
 <p>De Bijenkorf (the name means "The Beehive") has been the Netherlands' premier department store since 1870, with its Amsterdam flagship on the Dam Square being one of the country's most recognisable retail destinations. The store stocks international luxury and contemporary brands — from Louis Vuitton and Gucci to Acne Studios and A.P.C. — and its order receipts follow Dutch commercial standards, which include specific VAT notation requirements.</p>
@@ -621,7 +621,7 @@ export const posts: Post[] = [
     slug: 'denim-tears-receipt-generator',
     title: 'Denim Tears Receipt: Cultural Fashion Documentation for a Statement Label',
     description: 'Denim Tears by Tremaine Emory uses clothing to tell cultural stories. Here\'s what their order confirmation looks like and how to generate a receipt.',
-    date: '2026-07-01',
+    date: '2026-04-27',
     content: `
 <h2>Denim Tears: Fashion as Cultural Activism</h2>
 <p>Tremaine Emory founded Denim Tears in New York as a vehicle for storytelling through fashion — specifically, the history of African Americans and the cotton industry. The cotton wreath motif on Denim Tears denim directly references the labour of enslaved people on cotton plantations. This context makes Denim Tears more than a streetwear brand: it's cultural commentary. The pieces are collected as much for their meaning as their aesthetics, which is why documentation of origin and authenticity carries extra weight.</p>
@@ -641,7 +641,7 @@ export const posts: Post[] = [
     slug: 'dior-receipt-generator',
     title: 'Dior Receipt: Lady Dior, Saddle Bag, and the Oblique Canvas Purchase Confirmation',
     description: 'Dior receipts are formally structured with product references and VAT breakdowns. Here\'s what a Christian Dior order confirmation looks like.',
-    date: '2026-07-02',
+    date: '2026-04-28',
     content: `
 <h2>Dior: New Look Heritage, Contemporary Demand</h2>
 <p>Christian Dior revolutionised fashion in 1947 with the New Look, and the house has maintained its position at the pinnacle of Paris couture through creative directors from Yves Saint Laurent and Marc Bohan to John Galliano and now Maria Grazia Chiuri and Kim Jones. The Lady Dior bag — named after Princess Diana — and the Saddle bag are two of the most recognisable pieces in luxury fashion. Both appear frequently on resale platforms, where receipts matter significantly.</p>
@@ -661,7 +661,7 @@ export const posts: Post[] = [
     slug: 'dyson-receipt-generator',
     title: 'Dyson Receipt: Airwrap, Supersonic, and the Warranty That Needs Documentation',
     description: 'Dyson products come with a 2-year warranty that requires proof of purchase. Here\'s what a Dyson order confirmation looks like and how to generate a copy.',
-    date: '2026-07-03',
+    date: '2026-04-29',
     content: `
 <h2>Dyson: Engineering Receipts as Carefully as the Products</h2>
 <p>Dyson products are premium-priced and therefore premium-documented. The Airwrap Multi-Styler retails for £479.99 in the UK. The Supersonic Hair Dryer costs £329.99. The V15 Detect vacuum runs to £599. At these prices, the 2-year manufacturer warranty is not an afterthought — it's a significant part of what you're paying for. And the warranty requires proof of purchase: a receipt from an authorised retailer or dyson.com itself.</p>
@@ -681,7 +681,7 @@ export const posts: Post[] = [
     slug: 'ebay-receipt-generator',
     title: 'eBay Receipt: Order Confirmation for the World\'s Biggest Marketplace',
     description: 'eBay receipts differ between auction wins, Buy It Now, and eBay Authenticity Guaranteed purchases. Here\'s what each looks like and how to generate a copy.',
-    date: '2026-07-04',
+    date: '2026-04-30',
     content: `
 <h2>eBay: Three Ways to Buy, Three Different Receipts</h2>
 <p>eBay operates more purchase formats than any other marketplace. Auction wins produce one confirmation format. Buy It Now purchases produce another. And eBay Authenticity Guaranteed — the platform's sneaker and luxury authentication service — produces a third, which includes an authentication certificate alongside the standard order confirmation. Knowing which format applies to your purchase determines how the receipt should look.</p>
@@ -701,7 +701,7 @@ export const posts: Post[] = [
     slug: 'end-clothing-receipt-generator',
     title: 'END. Receipt: The UK\'s Most Curated Streetwear Retailer',
     description: 'END. Clothing is the UK\'s premier luxury streetwear platform. Here\'s what their order confirmation looks like and how to generate an END. receipt.',
-    date: '2026-07-05',
+    date: '2026-05-01',
     content: `
 <h2>END. Clothing: Newcastle\'s Gift to Streetwear</h2>
 <p>Founded in Newcastle in 2005, END. Clothing has grown from a local menswear boutique into one of the world's most respected luxury streetwear platforms, with stores in Newcastle, Glasgow, London, and Manchester, plus an internationally shipped e-commerce operation. END. is known for its exclusive colourway partnerships with Nike, New Balance, and Salomon, and for its Launch system — a randomised selection process for high-demand limited releases that replaced first-come-first-served queuing.</p>
@@ -721,7 +721,7 @@ export const posts: Post[] = [
     slug: 'flannels-receipt-generator',
     title: 'Flannels Receipt: UK Luxury Fashion Retail Documentation',
     description: 'Flannels is the UK\'s largest luxury multi-brand retailer. Here\'s what a Flannels order confirmation looks like and how to generate a receipt.',
-    date: '2026-07-06',
+    date: '2026-05-02',
     content: `
 <h2>Flannels: Luxury Fashion for Every UK High Street</h2>
 <p>Flannels is part of the Frasers Group empire, with over 50 stores across the UK stocking 200+ brands ranging from Moncler and Stone Island to Off-White and Paul Smith. Unlike Harrods or Harvey Nichols which are concentrated in London, Flannels has made luxury fashion accessible in cities like Sheffield, Liverpool, and Leeds. Their receipts reflect a mid-tier luxury positioning — more accessible than a Harrods purchase confirmation but more premium than a high street receipt.</p>
@@ -741,7 +741,7 @@ export const posts: Post[] = [
     slug: 'frasers-receipt-generator',
     title: 'Frasers Group Receipt: Sports Direct, House of Fraser, and the Wider Empire',
     description: 'Frasers Group operates multiple retail brands. Here\'s how Frasers receipts work across their different fascias and how to generate a copy.',
-    date: '2026-07-07',
+    date: '2026-05-03',
     content: `
 <h2>The Frasers Group Retail Empire</h2>
 <p>Frasers Group, controlled by Mike Ashley, operates Sports Direct, House of Fraser, Flannels, Evans Cycles, Game, and several other retail brands. A "Frasers" receipt could therefore refer to a purchase from any of these fascias. The most common context in which people need a Frasers receipt is Sports Direct (for sportswear) or House of Fraser (for mid-premium fashion). Each fascia has its own receipt format, though they share a common Frasers Group backend system.</p>
@@ -761,7 +761,7 @@ export const posts: Post[] = [
     slug: 'gallery-dept-receipt-generator',
     title: 'Gallery Dept Receipt: LA Art-Fashion and Its Purchase Documentation',
     description: 'Gallery Dept by Josu Thomas is one of LA\'s most collectible fashion labels. Here\'s what their receipt looks like and how to generate a copy.',
-    date: '2026-07-08',
+    date: '2026-05-04',
     content: `
 <h2>Gallery Dept: Where Art and Clothing Are Inseparable</h2>
 <p>Gallery Dept, the Los Angeles studio and brand founded by designer Josu Thomas, operates differently from most fashion labels. Much of what Gallery Dept produces is hand-painted, distressed, or reworked one at a time — meaning two "identical" pieces are never truly identical. Receipts and documentation for Gallery Dept items are therefore more important than for mass-produced fashion: they tie a specific, unique garment to a specific, documented purchase event.</p>
@@ -781,7 +781,7 @@ export const posts: Post[] = [
     slug: 'goat-receipt-generator',
     title: 'GOAT Receipt: New, Used, and Vintage — The Multi-Condition Marketplace',
     description: 'GOAT lists sneakers in new, used, and vintage conditions, each with different receipt implications. Here\'s what GOAT purchase confirmations look like.',
-    date: '2026-07-09',
+    date: '2026-05-05',
     content: `
 <h2>GOAT and the Condition Grading System</h2>
 <p>GOAT differentiates itself from StockX by accepting used and vintage sneakers alongside new pairs. This means a GOAT receipt carries condition information that a StockX receipt doesn't: "New," "New No Box," "Used — Very Good," or "Vintage." The condition grade affects both the price paid and the documentation — a "Vintage" pair of Air Jordan 1s from the 1985 original production has a very different story than a current Nike retail release.</p>
@@ -801,7 +801,7 @@ export const posts: Post[] = [
     slug: 'harrods-receipt-generator',
     title: 'Harrods Receipt: The World\'s Most Famous Department Store',
     description: 'A Harrods purchase confirmation is a document in its own right. Here\'s what it contains, how it\'s formatted, and how to generate a 1:1 Harrods receipt.',
-    date: '2026-07-10',
+    date: '2026-05-06',
     content: `
 <h2>Harrods: More Than a Shop</h2>
 <p>Harrods at 87–135 Brompton Road in Knightsbridge, London is not simply a department store — it's a global cultural landmark and one of the world's largest retail destinations. The store spans 330 departments across a million square feet. A Harrods purchase confirmation carries weight beyond its contents: it signals a purchase from the world's most recognisable luxury retail destination. That context gives the receipt a value beyond documentation.</p>
@@ -821,7 +821,7 @@ export const posts: Post[] = [
     slug: 'hermes-receipt-generator',
     title: 'Hermès Receipt: Birkin, Kelly, and the Documentation of the World\'s Most Coveted Bags',
     description: 'Hermès operates by invitation only for its most desirable bags. The purchase receipt is therefore a rare and important document. Here\'s what it looks like.',
-    date: '2026-07-11',
+    date: '2026-05-07',
     content: `
 <h2>The Hermès Allocation System</h2>
 <p>You cannot simply walk into a Hermès boutique and buy a Birkin or Kelly. Access to these bags requires an established buying history with the boutique — a relationship built through purchasing scarves, belts, home items, and other products over time. When a Hermès SA finally offers you a Birkin or Kelly (the offer process is called an "invitation"), the purchase confirmation that follows is extraordinarily significant: it documents one of the rarest retail transactions in the luxury market.</p>
@@ -841,7 +841,7 @@ export const posts: Post[] = [
     slug: 'jd-sports-receipt-generator',
     title: 'JD Sports Receipt: Exclusive Colourways and Limited Releases',
     description: 'JD Sports has exclusive access to colourways unavailable elsewhere. Here\'s what a JD order confirmation looks like and why these receipts matter for resale.',
-    date: '2026-07-12',
+    date: '2026-05-08',
     content: `
 <h2>JD Sports: The Exclusive Colourway Machine</h2>
 <p>JD Sports has a unique commercial position: through its scale and long-standing relationships with Nike and Adidas, it secures exclusive colourways unavailable at any other retailer. The "JD Exclusive" label on a product means it genuinely can't be bought elsewhere at retail. When those exclusive colourways appear on StockX or GOAT after selling out, the JD receipt that proves retail purchase from the original release is a meaningful provenance document.</p>
@@ -861,7 +861,7 @@ export const posts: Post[] = [
     slug: 'john-lewis-receipt-generator',
     title: 'John Lewis Receipt: The UK\'s Most Trusted Retailer',
     description: 'John Lewis\'s \"Never Knowingly Undersold\" promise and extended guarantees make their receipts particularly valuable. Here\'s what they look like.',
-    date: '2026-07-13',
+    date: '2026-05-09',
     content: `
 <h2>John Lewis and the 2-Year Guarantee</h2>
 <p>John Lewis offers a minimum two-year guarantee on most electrical products — one year longer than the legal requirement in the UK and longer than most competitor retailers. This guarantee requires proof of purchase. John Lewis's own-brand products carry a three-year guarantee. For high-value electrical goods — a Dyson, a Sony TV, a Nespresso machine — this extra year of coverage is worth £30–£50 in extended warranty market value, and the receipt is what activates it.</p>
@@ -881,7 +881,7 @@ export const posts: Post[] = [
     slug: 'loro-piana-receipt-generator',
     title: 'Loro Piana Receipt: The Quietest Luxury and Its Documentation',
     description: 'Loro Piana is stealth wealth at its finest. Here\'s what an LP receipt looks like and why these understated but expensive purchases need careful documentation.',
-    date: '2026-07-14',
+    date: '2026-05-10',
     content: `
 <h2>Loro Piana: Expensive Doesn\'t Mean Loud</h2>
 <p>Loro Piana, the Italian family-founded house now owned by LVMH, sits at the apex of the "quiet luxury" movement — no logos, no obvious branding, just extraordinarily expensive material. A Loro Piana baby cashmere coat costs £5,000–£12,000. The Icer boot runs to £1,400. These are garments worn by people who don't need to signal wealth through logos. But the receipts for these items are as significant as receipts for any flashy luxury good, for exactly the same insurance and resale reasons.</p>
@@ -901,7 +901,7 @@ export const posts: Post[] = [
     slug: 'maison-margiela-receipt-generator',
     title: 'Maison Margiela Receipt: Deconstructed Fashion, Numbered Labels, and the Confirmation Email',
     description: 'Maison Margiela\'s numbered label system extends to how products are named on receipts. Here\'s what the purchase confirmation looks like.',
-    date: '2026-07-15',
+    date: '2026-05-11',
     content: `
 <h2>Maison Margiela\'s Numbering System</h2>
 <p>Maison Margiela organises its output into numbered lines — Line 1 is the couture collection, Line 4 is women's ready-to-wear, Line 10 is men's denim, Line 22 is Artisanal. Products on receipts often reference these line numbers alongside the product name. A Replica sneaker, for example, is technically from Line 22 of the MM6 range. This numbering system is part of the brand's anonymous, anti-fashion philosophy — and it means Maison Margiela receipts have a distinctive naming convention you won't find on any other brand's documentation.</p>
@@ -921,7 +921,7 @@ export const posts: Post[] = [
     slug: 'moncler-receipt-generator',
     title: 'Moncler Receipt: Quilted Down Jackets and the Genius Documentation',
     description: 'Moncler receipts cover the main line and the Genius collaborative collection. Here\'s what they look like and how to generate a Moncler purchase confirmation.',
-    date: '2026-07-16',
+    date: '2026-05-12',
     content: `
 <h2>Moncler: From the French Alps to the Street</h2>
 <p>Moncler (Monestier-de-Clermont, the French alpine village where it was founded in 1952) spent decades making technical mountaineering gear before Remo Ruffini repositioned it as a luxury fashion brand in 2003. The Moncler Genius project — annual collaborative collections with designers including Pierpaolo Piccioli, Hiroshi Fujiwara, and Rick Owens — added a streetwear dimension that made the brand's quilted jackets a staple in cities far from any mountain. Genius drops are particularly sought after on the secondary market.</p>
@@ -941,7 +941,7 @@ export const posts: Post[] = [
     slug: 'neiman-marcus-receipt-generator',
     title: 'Neiman Marcus Receipt: American Luxury Department Store Documentation',
     description: 'Neiman Marcus is the definitive US luxury department store. Here\'s what their order confirmation looks like and how to generate a Neiman Marcus receipt.',
-    date: '2026-07-17',
+    date: '2026-05-13',
     content: `
 <h2>Neiman Marcus: The American Luxury Institution</h2>
 <p>Founded in Dallas in 1907 by Carrie Marcus Neiman and her brother Herbert Marcus, Neiman Marcus has operated for over a century as the US's premier luxury department store. The annual Christmas Book — a catalogue of extraordinary gift options including "His and Hers" novelty items — is a cultural touchstone. Neiman Marcus carries the full breadth of international luxury fashion, jewellery, and beauty, and their purchase confirmations reflect the formality of the institution.</p>
@@ -961,7 +961,7 @@ export const posts: Post[] = [
     slug: 'nordstrom-receipt-generator',
     title: 'Nordstrom Receipt: The Department Store with the Legendary Return Policy',
     description: 'Nordstrom\'s famously generous return policy makes the receipt more important. Here\'s what a Nordstrom order confirmation looks like.',
-    date: '2026-07-18',
+    date: '2026-05-14',
     content: `
 <h2>Nordstrom\'s Return Policy: The Receipt Question</h2>
 <p>Nordstrom is famous for an extremely generous return policy — historically, they would accept returns with no time limit and no receipt required for items at their discretion. That policy has tightened in recent years, but Nordstrom still offers 90-day returns for most items and an extended policy for Nordstrom card holders. Despite the flexibility, having the original receipt speeds up the return process significantly and is required for returns of Nordstrom's higher-priced items.</p>
@@ -981,7 +981,7 @@ export const posts: Post[] = [
     slug: 'north-face-receipt-generator',
     title: 'The North Face Receipt: From Summit to Street, the Purchase Documentation',
     description: 'The North Face has become as much a streetwear brand as an outdoor one. Here\'s what their receipt looks like and how to generate a copy.',
-    date: '2026-07-19',
+    date: '2026-05-15',
     content: `
 <h2>The North Face at the Intersection of Technical and Cultural</h2>
 <p>Founded in San Francisco in 1966, The North Face built its reputation on technical mountaineering equipment — the first down sleeping bag rated to extreme temperatures, GORE-TEX shells designed for Himalayan expeditions. But the 1990s hip-hop scene adopted TNF puffer jackets as urban streetwear, and Supreme, Gucci, and countless other brands have since collaborated with The North Face, cementing its crossover status. This means TNF receipts appear in both outdoor gear returns and streetwear resale contexts.</p>
@@ -1001,7 +1001,7 @@ export const posts: Post[] = [
     slug: 'pacsun-receipt-generator',
     title: 'PacSun Receipt: California Streetwear for the Young and Price-Conscious',
     description: 'PacSun carries Fear of God Essentials, Adidas, and exclusive collab pieces. Here\'s what their order confirmation looks like and how to generate a copy.',
-    date: '2026-07-20',
+    date: '2026-05-16',
     content: `
 <h2>PacSun: Where Essentials Lives at Retail Price</h2>
 <p>Pacific Sunwear (PacSun) occupies an interesting position in the streetwear market: it's an accessible, mall-based retailer that nevertheless carries Fear of God Essentials — one of the most hyped contemporary streetwear brands — at retail price. Essentials pieces sell out quickly at PacSun and appear on StockX and eBay at markups. A PacSun receipt for a Fear of God Essentials hoodie bought at retail is therefore worth documenting for resale purposes.</p>
@@ -1021,7 +1021,7 @@ export const posts: Post[] = [
     slug: 'pop-mort-receipt-generator',
     title: 'Pop Mort Receipt: The Rising Streetwear Brand and Its Purchase Confirmation',
     description: 'Pop Mort is building a loyal following in European streetwear. Here\'s what their order confirmation looks like and how to generate a Pop Mort receipt.',
-    date: '2026-07-21',
+    date: '2026-05-17',
     content: `
 <h2>Pop Mort: Building a Community Through Limited Drops</h2>
 <p>Pop Mort is a streetwear brand with a growing cult following, particularly in Europe, built on limited drops, distinctive graphics, and a community-first approach to growth. Like Corteiz and Broken Planet before it, Pop Mort has grown largely through social media and word of mouth rather than traditional advertising — which means its drops attract dedicated fans who compete for limited stock and drive an active secondary market.</p>
@@ -1041,7 +1041,7 @@ export const posts: Post[] = [
     slug: 'prada-receipt-generator',
     title: 'Prada Receipt: Nylon Bags, the Cleo, and Italian Luxury Documentation',
     description: 'Prada receipts are formally structured Italian luxury documents. Here\'s what they contain and how to generate a 1:1 Prada purchase confirmation.',
-    date: '2026-07-22',
+    date: '2026-05-18',
     content: `
 <h2>Prada: Intellectual Luxury with a Practical Receipt</h2>
 <p>Miuccia Prada and Raf Simons run one of fashion's most intellectually rigorous houses, known for subverting expectations — the utilitarian nylon bag at luxury prices, the ugly-shoe moment years before the broader industry followed, and runway collections that function as cultural criticism. The Prada Re-Edition nylon bags — originally designed in 1978 for ski equipment, revived in 2000, and re-revived in 2019 — are among the most consistently demanded items in contemporary luxury fashion. Prada receipts for these pieces and other sought-after styles carry real resale significance.</p>
@@ -1061,7 +1061,7 @@ export const posts: Post[] = [
     slug: 'saint-laurent-receipt-generator',
     title: 'Saint Laurent Receipt: YSL Purchase Confirmation and Resale Documentation',
     description: 'Saint Laurent is one of the most counterfeited luxury brands. A proper purchase receipt is essential. Here\'s what the YSL order confirmation looks like.',
-    date: '2026-07-23',
+    date: '2026-05-19',
     content: `
 <h2>Saint Laurent vs YSL: Brand Name on Receipts</h2>
 <p>The brand officially rebranded from "Yves Saint Laurent" to "Saint Laurent" for most of its ready-to-wear and accessories in 2012 under Hedi Slimane. However, the YSL monogram and the "Yves Saint Laurent" name continue on beauty products (the makeup and fragrance arm). On purchase receipts, the brand name depends on what you bought: clothing and bags will typically read "Saint Laurent" while makeup will read "Yves Saint Laurent." This distinction can matter when you need to recreate a specific receipt.</p>
@@ -1081,7 +1081,7 @@ export const posts: Post[] = [
     slug: 'sephora-receipt-generator',
     title: 'Sephora Receipt: Beauty Insider Points, Skincare, and Fragrance Purchase Documentation',
     description: 'Sephora receipts include Beauty Insider points and rewards details. Here\'s what a Sephora order confirmation looks like and how to generate a copy.',
-    date: '2026-07-24',
+    date: '2026-05-20',
     content: `
 <h2>Sephora: The World\'s Largest Beauty Platform</h2>
 <p>Owned by LVMH since 1997, Sephora operates over 2,700 stores globally and has become the dominant beauty retail platform in the US, Europe, and increasingly Asia. The Beauty Insider programme — with three tiers (Insider, VIB, and Rouge) — is one of retail's most effective loyalty programmes, with Rouge members spending over $1,000/year at Sephora. The points balance appears on every receipt, which means Sephora receipts contain more information than a typical retail confirmation.</p>
@@ -1101,7 +1101,7 @@ export const posts: Post[] = [
     slug: 'sp5der-receipt-generator',
     title: 'Sp5der Receipt: Young Thug\'s Web-Spinning Streetwear Brand',
     description: 'Sp5der (Spider) blew up fast. Here\'s what their order confirmation looks like and how to generate a Sp5der receipt for the secondary market.',
-    date: '2026-07-25',
+    date: '2026-05-21',
     content: `
 <h2>Sp5der: From Atlanta to Every City</h2>
 <p>Sp5der — pronounced "Spider" — was founded by Atlanta rapper Young Thug and broke into mainstream streetwear consciousness in 2021–22. The brand's rhinestone-encrusted spider web hoodies in neon colourways became instant resale items, with eBay and Depop listings appearing within hours of each drop. The brand's rapid cultural moment created a situation where demand far outstripped supply and receipts became documentation of a purchase made at the right time and place.</p>
@@ -1121,7 +1121,7 @@ export const posts: Post[] = [
     slug: 'ssense-receipt-generator',
     title: 'SSENSE Receipt: Montreal\'s Luxury Streetwear Platform',
     description: 'SSENSE is Canada\'s most influential luxury fashion platform. Here\'s what their order confirmation looks like and how to generate an SSENSE receipt.',
-    date: '2026-07-26',
+    date: '2026-05-22',
     content: `
 <h2>SSENSE: Fashion Curation as an Art Form</h2>
 <p>SSENSE (pronounced "essence") launched in Montreal in 2003 as a bricks-and-mortar store and has evolved into one of the world's most respected luxury fashion platforms, known for its ruthlessly curated brand mix, near-editorial product photography, and early adoption of designers before they reach mainstream recognition. SSENSE was stocking Vetements, Marine Serre, and Jacquemus before most competitors paid attention. Their receipts are associated with considered, early-access purchasing rather than impulse buys.</p>
@@ -1141,7 +1141,7 @@ export const posts: Post[] = [
     slug: 'stanley-receipt-generator',
     title: 'Stanley Receipt: The Quencher Craze and Its Purchase Documentation',
     description: 'Stanley became a social media phenomenon. Here\'s what a Stanley order confirmation looks like and how to generate a receipt for the Quencher and other products.',
-    date: '2026-07-27',
+    date: '2026-05-23',
     content: `
 <h2>Stanley: 110 Years Old, Viral at 111</h2>
 <p>Stanley (formally Pacific Prestige Brands / PMI) has made vacuum-insulated steel drinkware since 1913. For most of its history, it was workwear and outdoor equipment. Then, in 2019–23, a combination of influencer marketing, targeted partnerships with The Buy Guide, and Stanley's own social media strategy turned the Quencher H2.0 tumbler into the most discussed drinkware product in the world. Limited-edition colourways sell out within minutes. Valentine's Day, holiday, and collaboration releases create genuine resale markets.</p>
@@ -1161,7 +1161,7 @@ export const posts: Post[] = [
     slug: 'stussy-receipt-generator',
     title: 'Stüssy Receipt: The Original Streetwear Brand and Its Purchase Documentation',
     description: 'Stüssy invented streetwear. Here\'s what a Stüssy order confirmation looks like and how to generate a receipt for this foundational brand.',
-    date: '2026-07-28',
+    date: '2026-05-24',
     content: `
 <h2>Stüssy: The Brand That Created Streetwear</h2>
 <p>Shawn Stussy started signing his surfboards with a stylised version of his signature in Laguna Beach in the early 1980s. He then printed the same mark on T-shirts to sell alongside the boards. That hand-scripted logo became the visual foundation for the entire global streetwear industry. Stüssy's Chapter stores in Los Angeles, New York, London, Tokyo, and Paris remain among the most culturally significant retail destinations in streetwear — a Stüssy receipt from any of these locations carries heritage that a generic streetwear receipt doesn't.</p>
@@ -1181,7 +1181,7 @@ export const posts: Post[] = [
     slug: 'taylormade-golf-receipt-generator',
     title: 'TaylorMade Golf Receipt: Equipment Purchase Documentation for the Serious Golfer',
     description: 'TaylorMade is the world\'s leading golf equipment brand. Here\'s what their order confirmation looks like and how to generate a TaylorMade receipt.',
-    date: '2026-07-29',
+    date: '2026-05-25',
     content: `
 <h2>TaylorMade: From Carlsbad to Every Course</h2>
 <p>Founded in 1979 by Gary Adams in McHenry, Illinois and now headquartered in Carlsbad, California, TaylorMade Golf is the most-played driver on the PGA Tour and equipment of choice for Rory McIlroy, Tiger Woods, Scottie Scheffler, and Tommy Fleetwood. The Stealth and Qi10 driver families, the P-Series irons, and the Spider putter are premium equipment at premium prices — a driver costs £500–£600, a full iron set runs £900–£1,400. At these price points, the purchase receipt is meaningful documentation.</p>
@@ -1201,7 +1201,7 @@ export const posts: Post[] = [
     slug: 'trapstar-receipt-generator',
     title: 'Trapstar Receipt: London\'s Most Influential Streetwear Label',
     description: 'Trapstar was built in a bedroom and worn on global stages. Here\'s what their purchase confirmation looks like and how to generate a Trapstar receipt.',
-    date: '2026-07-30',
+    date: '2026-05-26',
     content: `
 <h2>Trapstar: From West London to the World</h2>
 <p>Trapstar was founded in 2005 in West London by Mikey, Lee, and Will — three friends who started printing T-shirts and selling them from a car boot. The brand's "IT'S A SECRET" tagline (a line from a Jay-Z song, adopted by the founders as their philosophy) defined a brand built on exclusivity and cool. Rihanna, Jay-Z, A$AP Rocky, and Stormzy wearing Trapstar amplified the brand to global visibility. Roc Nation (Jay-Z's label) invested in Trapstar in 2011. The brand is now one of the most recognised names in UK streetwear.</p>
@@ -1221,7 +1221,7 @@ export const posts: Post[] = [
     slug: 'ugg-receipt-generator',
     title: 'UGG Receipt: Sheepskin Boots and the Purchase Confirmation',
     description: 'UGG\'s Classic Boot carries a one-year warranty. Here\'s what an UGG order confirmation looks like and how to generate a receipt for warranty and returns.',
-    date: '2026-07-31',
+    date: '2026-05-27',
     content: `
 <h2>UGG: Australian Origins, Global Phenomenon</h2>
 <p>UGG was founded in 1978 by Australian surfer Brian Smith, who imported Australian sheepskin boots to California to warm up after surf sessions. The brand (now owned by Deckers Brands) has become a global footwear phenomenon, with the Classic Short and Classic Tall sheepskin boots worn by everyone from A-list celebrities to suburban school runs. The UGG Tasman slipper became a streetwear item in 2022, worn by Hailey Bieber and subsequently by the broader market. UGG receipts are needed for warranty claims, returns, and resale documentation.</p>
@@ -1241,7 +1241,7 @@ export const posts: Post[] = [
     slug: 'vinted-receipt-generator',
     title: 'Vinted Receipt: Secondhand Fashion Documentation in Europe\'s Biggest Marketplace',
     description: 'Vinted has no seller fees and no receipts in the traditional sense. Here\'s how Vinted purchase confirmations work and how to generate one.',
-    date: '2026-08-01',
+    date: '2026-05-28',
     content: `
 <h2>Vinted: No Fees, But Also Less Documentation</h2>
 <p>Vinted, the Lithuanian secondhand fashion platform founded in 2008, disrupted European peer-to-peer fashion by eliminating seller fees — sellers receive the full listed price, while buyers pay a small buyer protection fee. This model has made Vinted the largest secondhand fashion marketplace in Europe, with 65+ million members. But because Vinted is a peer-to-peer platform where private individuals sell to each other, the "receipt" generated is different from a retail brand confirmation.</p>
@@ -1261,7 +1261,7 @@ export const posts: Post[] = [
     slug: 'vivienne-westwood-receipt-generator',
     title: 'Vivienne Westwood Receipt: Punk Couture and Its Purchase Documentation',
     description: 'Vivienne Westwood\'s Saturn orb and tartan designs are widely counterfeited. Here\'s what an authentic VW receipt looks like and how to generate a copy.',
-    date: '2026-08-02',
+    date: '2026-05-29',
     content: `
 <h2>Dame Vivienne and Her Legacy</h2>
 <p>Dame Vivienne Westwood, who passed away in December 2022, was the most important British fashion designer of the 20th century — the mother of punk fashion, a climate activist, and a provocateur whose collections spanned everything from pirate shirts to corsets to the iconic Saturn orb jewellery. The house continues under the direction of her husband and creative partner Andreas Kronthaler. Westwood pieces — particularly the Saturn orb necklace and the tartan pieces — are consistently counterfeited, making authentic purchase receipts particularly valuable.</p>
@@ -1281,7 +1281,7 @@ export const posts: Post[] = [
     slug: 'xerjoff-receipt-generator',
     title: 'Xerjoff Receipt: Ultra-Luxury Niche Perfume Purchase Documentation',
     description: 'Xerjoff makes some of the world\'s most expensive fragrances. Here\'s what their purchase confirmation looks like and why documenting a Xerjoff purchase matters.',
-    date: '2026-08-03',
+    date: '2026-05-30',
     content: `
 <h2>Xerjoff: Where Perfume Meets Jewellery</h2>
 <p>Founded in Turin in 2003 by Sergio Momo, Xerjoff produces fragrances that occupy the ultra-niche and ultra-luxury segment of perfumery. Their bottles — encrusted with diamonds, hand-lacquered in precious pigments, wrapped in leather, or topped with 18k gold — are collector objects as much as vessels for scent. A Xerjoff Casamorati 1888 Bouquet Ideale in a standard bottle costs £200–£300. The limited edition Naxos in the jewelled Elixir bottle runs to several thousand euros. At these prices, purchase documentation is essential.</p>
@@ -1301,7 +1301,7 @@ export const posts: Post[] = [
     slug: 'zalando-receipt-generator',
     title: 'Zalando Receipt: Europe\'s Fashion Platform and Its Order Confirmation',
     description: 'Zalando is Europe\'s largest fashion platform with 45 million active customers. Here\'s what their order confirmation looks like and how to generate a receipt.',
-    date: '2026-08-04',
+    date: '2026-05-31',
     content: `
 <h2>Zalando: The European Fashion Operating System</h2>
 <p>Zalando launched in Berlin in 2008 with a simple idea: free delivery and free returns across Europe. That model, combined with a vast brand assortment (6,000+ brands, 600,000+ products), made it the dominant fashion e-commerce platform across Germany, Austria, Switzerland, France, the UK, and 17 other European markets. Zalando Plus (the premium membership tier) gives access to next-day delivery and extended returns. The sheer scale of Zalando's operations means its receipts are among the most commonly needed in European retail.</p>

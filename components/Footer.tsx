@@ -18,11 +18,11 @@ const Footer = () => {
     "dior", "dyson", "ebay", "end", "farfetch", "flannels", "flight_club",
     "frasers", "gallery_dept", "goat", "gucci", "harrods", "hermes",
     "jd_sports", "john_lewis", "loro_piana", "louis_vuitton", "maison_margiela",
-    "moncler", "neiman_marcus", "nike", "nike_snkrs", "nordstrom", "north_face",
+    "moncler", "neiman_marcus", "nike", "nordstrom", "north_face",
     "off_white", "pacsun", "pop_mort", "prada", "saint_laurent", "sephora",
-    "sp5der", "ssense", "stanley", "stockx", "stussy", "supreme",
+    "sp5der", "ssense", "stanley", "stockx", "stussy",
     "taylor_made_golf", "trapstar", "ugg", "vinted", "vivienne_westwood",
-    "xerjoff", "yeezy_gap", "zalando"
+    "xerjoff", "zalando"
   ];
 
   // Function to convert brand slug to display name
@@ -159,9 +159,9 @@ const Footer = () => {
 
         {/* Policies */}
         <div className="text-white/90 flex flex-wrap justify-center gap-4">
-          <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+          <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
           <Link href="/refund" className="hover:underline">Refund Policy</Link>
-          <Link href="/terms" className="hover:underline">Terms of Service</Link>
+          <Link href="/terms-of-service" className="hover:underline">Terms of Service</Link>
         </div>
       </div>
 
