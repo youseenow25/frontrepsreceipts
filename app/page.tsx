@@ -165,53 +165,6 @@ export default function Page() {
           <ImageUploader />
         </div>
 
-        <section className="luxury-features">
-          <div className="container">
-            <h2 className="features-title">Check our videos of examples</h2>
-           <div
-  style={{
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '20px',
-    flexWrap: 'wrap'
-  }}
->
-  <iframe
-    width="560"
-    height="405"
-    src="https://www.youtube.com/embed/lSIbSG7K5MM?si=_T6UfwB3XPKVFNhA"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  ></iframe>
-
-  <iframe
-    width="560"
-    height="405"
-    src="https://www.youtube.com/embed/afOwQ4U1Z9Y?si=59fr5TSkEIQvqe5_"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  ></iframe>
-
-  <iframe
-    width="560"
-    height="405"
-    src="https://www.youtube.com/embed/w50nDYGEiqw?si=TbSN2YuJnzurLZMD"
-    title="YouTube video player"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-  ></iframe>
-</div>
-
-
-
-
-          </div>
-        </section>
 
         <section className="luxury-features">
           <div className="container">
