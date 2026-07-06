@@ -251,31 +251,10 @@ export default function PricingPage() {
       description: 'Perfect for trying out our generator.',
     },
     {
-      id: '1-day',
-      name: '1 Day Access',
-      priceusd: 5.99,
-      description: '24 hours of unlimited access.',
-    },
-    {
-      id: '1-week',
-      name: '1 Week Access',
-      priceusd: 8.99,
-      description: 'Ideal for short-term projects.',
-    },
-  ];
-
-  const bottomRowPlans = [
-    {
       id: '1-month',
       name: '1 Month',
       priceusd: 15.99,
       description: 'Best for regular business use.',
-    },
-    {
-      id: '1-year',
-      name: '1 Year',
-      priceusd: 49.99,
-      description: 'Best value for heavy users.',
     },
     {
       id: 'lifetime',
@@ -284,6 +263,8 @@ export default function PricingPage() {
       description: 'Lifetime access, pay once.',
     },
   ];
+
+  const bottomRowPlans: never[] = [];
 
   const renderPlanCard = (plan: any) => (
     <div
@@ -460,12 +441,6 @@ export default function PricingPage() {
           </div>
         </section>
 
-        {/* Bottom Row Plans */}
-        <section className="mx-auto w-full max-w-6xl px-6 pb-20">
-          <div className="grid gap-2 lg:grid-cols-3">
-            {bottomRowPlans.map(renderPlanCard)}
-          </div>
-        </section>
       </div>
 
       <Footer />
