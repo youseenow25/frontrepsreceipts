@@ -119,11 +119,18 @@ export default function Header() {
     >
       <button
         onClick={() => navigateTo("/")}
+        aria-label="Go to homepage"
         style={{ display: "flex", alignItems: "center", gap: 8, border: "none", background: "none" }}
       >
-   
+        <Image 
+          width={60} 
+          height={60} 
+          alt="RepReceipts logo" 
+          src={"/logoheader.png"}
+          priority
+        />
       </button>
-      <button onClick={toggleMobileMenu} style={{ border: "none", background: "none" }}>
+      <button onClick={toggleMobileMenu} aria-label="Close menu" style={{ border: "none", background: "none" }}>
         <X size={28} color="black" />
       </button>
     </div>
@@ -141,7 +148,7 @@ export default function Header() {
           cursor: "pointer",
         }}
       >
-        Pricing
+        💰 Pricing
       </button>
 
       <button
@@ -155,11 +162,39 @@ export default function Header() {
           cursor: "pointer",
         }}
       >
-        Brands
+        🏷️ Brands
       </button>
 
-      
+      <button
+        onClick={() => navigateTo("/#examples")}
+        style={{
+          background: "none",
+          border: "none",
+          fontSize: 20,
+          fontWeight: 600,
+          color: "#000",
+          cursor: "pointer",
+        }}
+      >
+        🧾 Examples of Usage
+      </button>
 
+      <a
+        href="https://t.me/+BF4byc1lOas4MDVk"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          background: "none",
+          border: "none",
+          fontSize: 20,
+          fontWeight: 600,
+          color: "#000",
+          cursor: "pointer",
+          textDecoration: "none",
+        }}
+      >
+        💬 Help
+      </a>
     </div>
 
     {/* Bottom: Auth Actions */}
@@ -193,7 +228,7 @@ export default function Header() {
               fontSize: "16px",
             }}
           >
-            Log out
+            Logout
           </button>
         </div>
       ) : (
@@ -246,7 +281,6 @@ export default function Header() {
           zIndex: 50,
           borderBottom: "1px solid #eee",
           backgroundColor: "white",
-          height: 80,
         }}
       >
         <div
@@ -254,6 +288,7 @@ export default function Header() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            minHeight: 80,
             height: 80,
             padding: "0 20px",
             maxWidth: "100%",
@@ -262,7 +297,13 @@ export default function Header() {
         >
           {/* Simple static header during SSR */}
           <button onClick={() => router.push("/")} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <Image width={110} height={110} alt="Webpage logo" src={'/logo.png'} />
+            <Image 
+              width={110} 
+              height={110} 
+              alt="RepReceipts logo" 
+              src={'/hublogo.png'}
+              priority
+            />
           </button>
         </div>
       </header>
@@ -285,6 +326,7 @@ export default function Header() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          minHeight: isMobile ? 60 : 80,
           height: isMobile ? 60 : 80,
           padding: isMobile ? "0 16px" : "0px 20px",
           maxWidth: "100%",
@@ -292,12 +334,13 @@ export default function Header() {
         }}
       >
         {/* Left: Brand */}
-        <button onClick={() => router.push("/")} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+        <button onClick={() => router.push("/")} aria-label="Go to homepage" style={{ display: "flex", alignItems: "center", gap: 8 }}>
           <Image 
             width={isMobile ? 60 : 90} 
-            height={isMobile ? 60 : 900} 
-            alt="Webpage logo" 
-            src={'/logo.png'} 
+            height={isMobile ? 60 : 90} 
+            alt="RepReceipts logo" 
+            src={'/logoheader.png'}
+            priority
           />
         </button>
 
@@ -330,7 +373,7 @@ export default function Header() {
                 }}
               >
                 <span style={{ color: 'black', fontWeight:'bold' }}>
-                  Pricing
+                  💰 Pricing
                 </span>
                    <ChevronRight size={20}/>
                
@@ -378,12 +421,52 @@ export default function Header() {
               }}
             >
               <span style={{ color: 'black', fontWeight:'bold' }}>
-                Our Brands
+                🏷️ Brands
               </span>
               <ChevronRight size={20}/>
             </button>
 
+            {/* Examples */}
+            <a
+              href="#examples"
+              style={{
+                textDecoration: "none",
+                color: "#000",
+                fontWeight: 500,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
+                padding: "8px 12px",
+                borderRadius: 6,
+              }}
+            >
+               <span style={{ color: 'black', fontWeight:'bold' }}>
+               ✨ Examples of usage
+              </span>
+                 <ChevronRight size={20}/>
+            </a>
 
+            {/* Help */}
+            <a
+              href="https://t.me/+BF4byc1lOas4MDVk"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                color: "#000",
+                fontWeight: 500,
+                display: "flex",
+                alignItems: "center",
+                gap: 4,
+                padding: "8px 12px",
+                borderRadius: 6,
+              }}
+            >
+                 <span style={{ color: 'black', fontWeight:'bold' }}>
+               💬 Help
+              </span>
+              <ChevronRight size={20}/>
+            </a>
           </div>
         )}
 
@@ -402,11 +485,11 @@ export default function Header() {
             !isMobile ? (
               <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
                 <div style={{ 
-                  color: "white", 
+                  color: "#000", 
                   fontWeight: 500,
                   fontSize: "14px",
                   padding: "8px 12px",
-                  backgroundColor: "black",
+                  backgroundColor: "#f8f9fa",
                   borderRadius: 8,
                   border: "1px solid #ddd"
                 }}>
@@ -426,12 +509,13 @@ export default function Header() {
                     backgroundColor: "white"
                   }}
                 >
-                  Log out
+                  Logout
                 </button>
               </div>
             ) : (
               <button
                 onClick={toggleMobileMenu}
+                aria-label="Open menu"
                 style={{ background: "none", border: "none", padding: 8 }}
               >
                 <Menu size={24} color="black" />
@@ -447,7 +531,6 @@ export default function Header() {
                   style={{
                     background:'#efefef',
                     display:'flex',
-                    borderRadius:10,
                 
               
                 
@@ -465,9 +548,9 @@ export default function Header() {
                     gap:5
                   }}
                 >
-                  
+                    <Lock size={18} color="black" className="icon-lock" />
                   <span style={{color:'black'}} >
-                       Log in now
+                       Log in
 
                   </span>
                 
@@ -475,12 +558,11 @@ export default function Header() {
                 <button
                   onClick={goToRegister}
                   style={{
-                    backgroundColor: "black",
+                    backgroundColor: "#4468f9",
                     color: "white",
                     padding: "10px 40px",
                     border: "none",
                     fontWeight: 600,
-                    borderRadius:10,
                     whiteSpace: "nowrap",
                
                     cursor: "pointer",
@@ -493,6 +575,7 @@ export default function Header() {
             ) : (
               <button
                 onClick={toggleMobileMenu}
+                aria-label="Open menu"
                 style={{ background: "none", border: "none", padding: 8 }}
               >
                 <Menu size={24} color="black" />
