@@ -247,19 +247,19 @@ export default function PricingPage() {
     {
       id: '1-receipt',
       name: '1 Receipt',
-      priceusd: 2.99,
+      priceusd: 5.99,
       description: 'Perfect for trying out our generator.',
     },
     {
       id: '1-month',
       name: '1 Month',
-      priceusd: 15.99,
+      priceusd: 14.99,
       description: 'Best for regular business use.',
     },
     {
       id: 'lifetime',
       name: 'Lifetime',
-      priceusd: 59.99,
+      priceusd: 24.99,
       description: 'Lifetime access, pay once.',
     },
   ];
