@@ -5,12 +5,27 @@ export const dynamic = 'force-dynamic'
 export const dynamicParams = true
 
 export const metadata: Metadata = {
+  title: 'Pricing - Receipt Generator Plans | RepsReceipts',
+  description: 'Simple, transparent pricing. Generate 1 receipt for $5.99, unlimited receipts for 1 month at $14.99, or lifetime access for $24.99. No subscription required.',
+  alternates: {
+    canonical: '/pricing',
+  },
+  openGraph: {
+    title: 'Pricing - Receipt Generator Plans | RepsReceipts',
+    description: 'Generate receipts for 64+ brands. From $5.99 for a single receipt to $24.99 lifetime access.',
+    url: 'https://www.repsreceipt.com/pricing',
+    siteName: 'RepsReceipts',
+    locale: 'en_US',
+    type: 'website',
+  },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
     },
   },
 }
