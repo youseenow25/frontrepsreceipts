@@ -247,7 +247,7 @@ export default function PricingPage() {
     {
       id: '1-receipt',
       name: '1 Receipt',
-      priceusd: 5.99,
+      priceusd: 4.99,
       description: 'Perfect for trying out our generator.',
     },
     {

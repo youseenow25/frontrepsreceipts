@@ -222,7 +222,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "image": "https://www.repsreceipt.com/og-image.jpg",
               "offers": {
                 "@type": "Offer",
-                "price": "5.99",
+                "price": "4.99",
                 "priceCurrency": "USD",
                 "priceValidUntil": "2027-12-31"
               },
@@ -259,7 +259,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       "name": "Single Receipt",
                       "description": "Generate one receipt for any supported brand"
                     },
-                    "price": "5.99",
+                    "price": "4.99",
                     "priceCurrency": "USD"
                   },
                   {
