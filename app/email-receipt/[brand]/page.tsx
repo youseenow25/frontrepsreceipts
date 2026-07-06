@@ -7,6 +7,7 @@ import BrandReceiptGenerator from '@/components/BrandReceiptGenerator'
 import brandsSchema from '@/components/brands'
 import Link from 'next/link'
 import ReceiptExamplesHero from '@/components/ReceiptExamplesHero'
+import { brandContent } from '@/lib/brandContent'
 
 type Props = {
   params: { brand: string }
@@ -154,39 +155,39 @@ export default function EmailReceiptBrandPage({ params }: Props) {
           </Suspense>
         </div>
 
-        {/* SEO content - focused on email/digital receipts */}
+        {/* SEO content - unique per brand */}
         <section className="brand-seo-rich">
           <div className="brand-seo-inner">
-            <h2>{brandName} Email Receipt and Order Confirmation Generator</h2>
-            <p>
-              Create {brandName} email receipts formatted for digital delivery. This tool generates order
-              confirmation emails with {brandName} branding, including header logos, order summaries,
-              shipping details, and payment breakdowns. The email receipt format is optimized for inbox
-              rendering across Gmail, Outlook, and mobile email clients.
-            </p>
-
-            <h3>Email Receipt vs PDF Receipt</h3>
-            <p>
-              While <Link href={`/receipt/${brand}`}>PDF receipt templates</Link> are designed for printing and
-              file storage, email receipts follow the HTML email format that customers receive after online
-              purchases. The {brandName} email receipt includes order confirmation numbers, estimated delivery
-              dates, and clickable order tracking sections that match the brand&apos;s digital communication style.
-            </p>
-
-            <h3>What the {brandName} Email Receipt Includes</h3>
-            <ul>
-              <li>Branded email header with {brandName} logo and order confirmation number.</li>
-              <li>Itemized product list with images, sizes, and individual prices.</li>
-              <li>Order summary with subtotal, shipping, tax, and total breakdown.</li>
-              <li>Shipping address and estimated delivery information fields.</li>
-            </ul>
-
-            <p className="brand-links">
-              More {brandName} tools: <Link href={`/brands/${brand}`}>{brandName} receipt generator</Link> ·{' '}
-              <Link href={`/receipt/${brand}`}>{brandName} PDF template</Link> ·{' '}
-              <Link href="/brands">browse all brands</Link> ·{' '}
-              <Link href="/contact">contact us</Link>
-            </p>
+            {(() => {
+              const content = brandContent[brand]
+              if (!content) return (
+                <>
+                  <h2>{brandName} Email Receipt and Order Confirmation Generator</h2>
+                  <p>Create {brandName} email receipts formatted for digital delivery with branded headers, order summaries, and shipping details.</p>
+                  <p className="brand-links">
+                    <Link href={`/brands/${brand}`}>{brandName} receipt generator</Link> ·{' '}
+                    <Link href={`/receipt/${brand}`}>{brandName} PDF template</Link> ·{' '}
+                    <Link href="/brands">browse all brands</Link>
+                  </p>
+                </>
+              )
+              return (
+                <>
+                  <h2>{content.emailAngle}</h2>
+                  <p>{content.emailBody}</p>
+                  <h3>What the {brandName} email receipt includes</h3>
+                  <ul>
+                    {content.emailFeatures.map((f, i) => <li key={i}>{f}</li>)}
+                  </ul>
+                  <p className="brand-links">
+                    More {brandName} tools: <Link href={`/brands/${brand}`}>{brandName} receipt generator</Link> ·{' '}
+                    <Link href={`/receipt/${brand}`}>{brandName} PDF template</Link> ·{' '}
+                    <Link href="/brands">browse all brands</Link> ·{' '}
+                    <Link href="/contact">contact us</Link>
+                  </p>
+                </>
+              )
+            })()}
           </div>
         </section>
       </main>

@@ -7,6 +7,7 @@ import BrandReceiptGenerator from '@/components/BrandReceiptGenerator'
 import brandsSchema from '@/components/brands'
 import Link from 'next/link'
 import ReceiptExamplesHero from '@/components/ReceiptExamplesHero'
+import { brandContent } from '@/lib/brandContent'
 
 type Props = {
   params: { brand: string }
@@ -154,39 +155,39 @@ export default function ReceiptBrandPage({ params }: Props) {
           </Suspense>
         </div>
 
-        {/* SEO content - focused on PDF/print receipt templates */}
+        {/* SEO content - unique per brand */}
         <section className="brand-seo-rich">
           <div className="brand-seo-inner">
-            <h2>Download {brandName} Receipt Templates as PDF</h2>
-            <p>
-              This page provides downloadable {brandName} receipt templates formatted for printing and PDF export.
-              Unlike generic invoice tools, each template uses {brandName}-specific layout structures including
-              correct logo placement, font styling, and field arrangement. Fill in your order details — items,
-              prices, taxes, payment method — and download a print-ready PDF instantly.
-            </p>
-
-            <h3>PDF Receipt Features</h3>
-            <p>
-              The {brandName} PDF template supports multiple line items with individual pricing, automatic
-              subtotal and tax calculation, and customizable store location details. Receipts export at
-              standard print resolution so they look sharp on paper or when attached to digital documents.
-              You can generate receipts in any supported currency with regional tax formatting.
-            </p>
-
-            <h3>Common Uses for {brandName} Receipt Templates</h3>
-            <ul>
-              <li>Expense report documentation with itemized purchase details.</li>
-              <li>Record keeping for warranty registration and product returns.</li>
-              <li>Business accounting and purchase order reconciliation.</li>
-              <li>Print-ready format optimized for A4 and letter paper sizes.</li>
-            </ul>
-
-            <p className="brand-links">
-              Other {brandName} tools: <Link href={`/brands/${brand}`}>{brandName} receipt generator</Link> ·{' '}
-              <Link href={`/email-receipt/${brand}`}>{brandName} email receipt</Link> ·{' '}
-              <Link href="/brands">all brands</Link> ·{' '}
-              <Link href="/about">about us</Link>
-            </p>
+            {(() => {
+              const content = brandContent[brand]
+              if (!content) return (
+                <>
+                  <h2>Download {brandName} Receipt Templates as PDF</h2>
+                  <p>Generate and download {brandName} receipts formatted for printing and PDF export. Fill in your order details and export instantly.</p>
+                  <p className="brand-links">
+                    <Link href={`/brands/${brand}`}>{brandName} receipt generator</Link> ·{' '}
+                    <Link href={`/email-receipt/${brand}`}>{brandName} email receipt</Link> ·{' '}
+                    <Link href="/brands">all brands</Link>
+                  </p>
+                </>
+              )
+              return (
+                <>
+                  <h2>{content.receiptAngle}</h2>
+                  <p>{content.receiptBody}</p>
+                  <h3>Common uses for a {brandName} receipt</h3>
+                  <ul>
+                    {content.receiptUses.map((use, i) => <li key={i}>{use}</li>)}
+                  </ul>
+                  <p className="brand-links">
+                    Other {brandName} tools: <Link href={`/brands/${brand}`}>{brandName} receipt generator</Link> ·{' '}
+                    <Link href={`/email-receipt/${brand}`}>{brandName} email receipt</Link> ·{' '}
+                    <Link href="/brands">all brands</Link> ·{' '}
+                    <Link href="/about">about us</Link>
+                  </p>
+                </>
+              )
+            })()}
           </div>
         </section>
       </main>
