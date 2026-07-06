@@ -69,10 +69,10 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-4 text-white">
-            <a href="#"><i className="fab fa-facebook-f text-lg"></i></a>
-            <a href="#"><i className="fab fa-instagram text-lg"></i></a>
-            <a href="#"><i className="fab fa-youtube text-lg"></i></a>
-            <a href="#"><i className="fab fa-tiktok text-lg"></i></a>
+            <a href="#" aria-label="Facebook" style={{minWidth:44,minHeight:44,display:'flex',alignItems:'center',justifyContent:'center'}}><i className="fab fa-facebook-f text-lg"></i></a>
+            <a href="#" aria-label="Instagram" style={{minWidth:44,minHeight:44,display:'flex',alignItems:'center',justifyContent:'center'}}><i className="fab fa-instagram text-lg"></i></a>
+            <a href="#" aria-label="YouTube" style={{minWidth:44,minHeight:44,display:'flex',alignItems:'center',justifyContent:'center'}}><i className="fab fa-youtube text-lg"></i></a>
+            <a href="#" aria-label="TikTok" style={{minWidth:44,minHeight:44,display:'flex',alignItems:'center',justifyContent:'center'}}><i className="fab fa-tiktok text-lg"></i></a>
           </div>
         </div>
 
@@ -150,7 +150,8 @@ const Footer = () => {
       <div className="mt-12 border-t border-white/30 pt-6 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
 
         {/* Country Selector */}
-        <select className="bg-transparent border border-white/50 rounded-md px-3 py-2 text-white/90">
+        <label htmlFor="country-selector" className="sr-only">Select country and currency</label>
+        <select id="country-selector" aria-label="Select country and currency" className="bg-transparent border border-white/50 rounded-md px-3 py-2 text-white/90">
           <option>Spain | EUR €</option>
           <option>Finland | EUR €</option>
           <option>USA | USD $</option>
@@ -171,16 +172,16 @@ const Footer = () => {
       <div className="mt-2 text-center text-white/90 text-sm">
         Follow us on social media!
         <div className="inline-flex gap-3 ml-2">
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" aria-label="Facebook" className="hover:text-white transition-colors" style={{minWidth:44,minHeight:44,display:'inline-flex',alignItems:'center',justifyContent:'center'}}>
             <i className="fab fa-facebook-f"></i>
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" aria-label="Instagram" className="hover:text-white transition-colors" style={{minWidth:44,minHeight:44,display:'inline-flex',alignItems:'center',justifyContent:'center'}}>
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" aria-label="TikTok" className="hover:text-white transition-colors" style={{minWidth:44,minHeight:44,display:'inline-flex',alignItems:'center',justifyContent:'center'}}>
             <i className="fab fa-tiktok"></i>
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" aria-label="YouTube" className="hover:text-white transition-colors" style={{minWidth:44,minHeight:44,display:'inline-flex',alignItems:'center',justifyContent:'center'}}>
             <i className="fab fa-youtube"></i>
           </a>
         </div>

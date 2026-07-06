@@ -135,21 +135,24 @@ export default function Page() {
            
             
             <div style={{marginTop:10}} className="receipts-grid">
-              {brands.map((brand) => (
+              {brands.map((brand, index) => (
                 <Link
                   key={brand}
                   href={`/brands/${brand}`}
                   className="receipt-card"
                   aria-label={`View the ${toLabel(brand)} receipt generator`}
                 >
-                  <div className="receipt-image">
+                  <div className="receipt-image" style={{width:120,height:160,flexShrink:0}}>
                     <Image
                       src={`/${brand}_example.png`}
                       alt={`${toLabel(brand)} receipt example`}
                       width={120}
                       height={160}
+                      priority={index < 4}
                       style={{
                         objectFit: "contain",
+                        width: 120,
+                        height: 160,
                       }}
                     />
                   </div>

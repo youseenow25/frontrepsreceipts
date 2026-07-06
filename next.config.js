@@ -80,4 +80,36 @@ const nextConfig = {
   },
 }
 
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          // Clickjacking protection (fixes XFO Lighthouse warning)
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          // Prevent MIME sniffing
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          // Referrer policy
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          // HSTS (fixes Lighthouse HSTS warning)
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+          // Cross-Origin-Opener-Policy (fixes COOP warning)
+          { key: 'Cross-Origin-Opener-Policy', value: 'same-origin-allow-popups' },
+          // Cross-Origin-Resource-Policy
+          { key: 'Cross-Origin-Resource-Policy', value: 'same-site' },
+          // Permissions policy
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+        ],
+      },
+      // Cache static assets aggressively
+      {
+        source: '/(.*)\\.(png|jpg|jpeg|webp|svg|ico|woff|woff2)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+    ]
+  },
+}
+
 module.exports = nextConfig

@@ -295,12 +295,12 @@ export default function Header() {
             margin: "0 auto",
           }}
         >
-          {/* Simple static header during SSR */}
-          <button onClick={() => router.push("/")} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <Image 
-              width={110} 
-              height={110} 
-              alt="RepReceipts logo" 
+          {/* Static skeleton — same height and logo size as mounted header to prevent CLS */}
+          <button onClick={() => router.push("/")} aria-label="Go to homepage" style={{ display: "flex", alignItems: "center", gap: 8, border: "none", background: "none" }}>
+            <Image
+              width={90}
+              height={90}
+              alt="RepReceipts logo"
               src={'/logo.png'}
               priority
             />
@@ -326,8 +326,8 @@ export default function Header() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          minHeight: isMobile ? 60 : 80,
-          height: isMobile ? 60 : 80,
+          minHeight: 80,
+          height: 80,
           padding: isMobile ? "0 16px" : "0px 20px",
           maxWidth: "100%",
           margin: "0 auto",
@@ -335,10 +335,10 @@ export default function Header() {
       >
         {/* Left: Brand */}
         <button onClick={() => router.push("/")} aria-label="Go to homepage" style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <Image 
-            width={isMobile ? 60 : 90} 
-            height={isMobile ? 60 : 90} 
-            alt="RepReceipts logo" 
+          <Image
+            width={90}
+            height={90}
+            alt="RepReceipts logo"
             src={'/logo.png'}
             priority
           />
