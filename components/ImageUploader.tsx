@@ -200,7 +200,7 @@ const BrandLogo = ({ brand, size = 24 }: { brand: string; size?: number }) => {
   return (
     <img
       src={getLogoPath(brand)}
-      alt={brand}
+      alt="" aria-hidden="true"
       style={{
         width: size,
         height: size,

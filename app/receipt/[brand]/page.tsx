@@ -46,7 +46,7 @@ export async function generateMetadata(
 
   const brandName = toLabel(brand)
   const description = `Download ${brandName} receipt templates as PDF. Professional ${brandName} receipt maker with brand formatting, itemized lines, and print-ready export.`
-  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.webp`
+  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
 
   return {
     title: `${brandName} Receipt Template - Download PDF | RepReceipts`,
@@ -118,7 +118,7 @@ export default function ReceiptBrandPage({ params }: Props) {
   }
 
   const brandName = toLabel(brand)
-  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.webp`
+  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
 
   const structuredData = {
     '@context': 'https://schema.org',

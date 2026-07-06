@@ -99,6 +99,25 @@ const nextConfig = {
           { key: 'Cross-Origin-Resource-Policy', value: 'same-site' },
           // Permissions policy
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+          // Content Security Policy — permissive enough for GTM/GA/Ahrefs/PayPal,
+          // but locks down object/base/frame-ancestors against XSS and clickjacking
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https:",
+              "style-src 'self' 'unsafe-inline' https:",
+              "img-src 'self' data: blob: https:",
+              "font-src 'self' data: https:",
+              "connect-src 'self' https:",
+              "frame-src https:",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "frame-ancestors 'self'",
+              "form-action 'self' https:",
+              'upgrade-insecure-requests',
+            ].join('; '),
+          },
         ],
       },
       // Cache static assets aggressively

@@ -46,7 +46,7 @@ export async function generateMetadata(
 
   const brandName = toLabel(brand)
   const description = `Build ${brandName} email receipts with correct layout, branding, and fields for customer confirmations.`
-  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.webp`
+  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
 
   return {
     title: `${brandName} Email Receipt Generator - Order Confirmation | RepReceipts`,
@@ -118,7 +118,7 @@ export default function EmailReceiptBrandPage({ params }: Props) {
   }
 
   const brandName = toLabel(brand)
-  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.webp`
+  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
 
   const structuredData = {
     '@context': 'https://schema.org',

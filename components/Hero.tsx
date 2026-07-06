@@ -43,7 +43,7 @@ const BrandLogo = ({ brand, size = 20 }: { brand: string; size?: number }) => {
   return (
     <img
       src={getLogoPath(brand)}
-      alt={brand}
+      alt="" aria-hidden="true"
       style={{
         width: size,
         height: size,
@@ -184,9 +184,12 @@ export default function Hero() {
       {/* Remove container class from the main div */}
       <div style={{ width: '100%' }}>
         <p aria-hidden style={{
-          fontSize: isMobile ? "clamp(2rem, 8vw, 3rem)" : "clamp(3.5rem, 5vw, 5rem)",
+          fontSize: "clamp(1.5rem, 6.5vw, 5rem)",
           fontWeight: 500,
           lineHeight: 1.2,
+          minHeight: "1.2em",
+          whiteSpace: "nowrap",
+          overflow: "hidden",
           marginBottom: "1rem",
           textAlign: "center"
         }}>
@@ -277,13 +280,19 @@ export default function Hero() {
 
       <style>{`
         .hero {
-          padding: ${isMobile ? '40px 0px 0px' : '20px 0px 0px'}; /* Remove horizontal padding */
+          padding: 20px 0px 0px;
           text-align: center;
           position: relative;
           z-index: 1;
           width: 100vw;
           margin-left: calc(-50vw + 50%);
           margin-right: calc(-50vw + 50%);
+        }
+
+        @media (max-width: 767px) {
+          .hero {
+            padding: 40px 0px 0px;
+          }
         }
 
         .btn {
