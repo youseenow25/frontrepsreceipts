@@ -183,15 +183,16 @@ export default function Hero({ brandName = "" }: HeroProps) {
   return (
     <section className="hero">
       <div style={{ width: '100%' }}>
-        <h5 style={{ 
-          fontSize: isMobile ? "clamp(2rem, 8vw, 3rem)" : "clamp(3.5rem, 5vw, 5rem)",          fontWeight: 500,
+        <p aria-hidden style={{
+          fontSize: isMobile ? "clamp(2rem, 8vw, 3rem)" : "clamp(3.5rem, 5vw, 5rem)",
+          fontWeight: 500,
           lineHeight: 1.2,
           marginBottom: "1rem",
           textAlign: "center"
         }}>
           {phrases[index].substring(0, subIndex)}
           <span style={{ opacity: blink ? 1 : 0 }}>|</span>
-        </h5>
+        </p>
 
         
 

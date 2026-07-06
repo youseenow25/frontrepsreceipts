@@ -208,7 +208,7 @@ export default function PricingPage() {
         return;
       }
 
-      const response = await fetch('https://api.repsreceipts.com/api/payment/create-checkout-session', {
+      const response = await fetch('https://api.repsreceipt.com/api/payment/create-checkout-session', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
@@ -248,24 +248,19 @@ export default function PricingPage() {
       id: '1-receipt',
       name: '1 Receipt',
       priceusd: 2.99,
-  
       description: 'Perfect for trying out our generator.',
-
     },
     {
       id: '1-day',
       name: '1 Day Access',
       priceusd: 5.99,
-  
       description: '24 hours of unlimited access.',
     },
     {
       id: '1-week',
       name: '1 Week Access',
-      priceusd: 10.99,
-   
+      priceusd: 8.99,
       description: 'Ideal for short-term projects.',
-
     },
   ];
 
@@ -274,19 +269,20 @@ export default function PricingPage() {
       id: '1-month',
       name: '1 Month',
       priceusd: 15.99,
-    
       description: 'Best for regular business use.',
-   
     },
-     {
-      id: 'Lifetime',
+    {
+      id: '1-year',
+      name: '1 Year',
+      priceusd: 49.99,
+      description: 'Best value for heavy users.',
+    },
+    {
+      id: 'lifetime',
       name: 'Lifetime',
       priceusd: 59.99,
-    
-      description: 'Lifetime access',
-    
+      description: 'Lifetime access, pay once.',
     },
-    
   ];
 
   const renderPlanCard = (plan: any) => (
@@ -465,8 +461,8 @@ export default function PricingPage() {
         </section>
 
         {/* Bottom Row Plans */}
-        <section className="mx-auto w-full max-w-4xl px-6 pb-20">
-          <div className="grid gap-8 lg:grid-cols-2">
+        <section className="mx-auto w-full max-w-6xl px-6 pb-20">
+          <div className="grid gap-2 lg:grid-cols-3">
             {bottomRowPlans.map(renderPlanCard)}
           </div>
         </section>

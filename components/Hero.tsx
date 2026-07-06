@@ -183,8 +183,8 @@ export default function Hero() {
     <section className="hero">
       {/* Remove container class from the main div */}
       <div style={{ width: '100%' }}>
-        <h5 style={{ 
-          fontSize: isMobile ? "clamp(2rem, 8vw, 3rem)" : "clamp(3.5rem, 5vw, 5rem)", 
+        <p aria-hidden style={{
+          fontSize: isMobile ? "clamp(2rem, 8vw, 3rem)" : "clamp(3.5rem, 5vw, 5rem)",
           fontWeight: 500,
           lineHeight: 1.2,
           marginBottom: "1rem",
@@ -192,7 +192,7 @@ export default function Hero() {
         }}>
           {phrases[index].substring(0, subIndex)}
           <span style={{ opacity: blink ? 1 : 0 }}>|</span>
-        </h5>
+        </p>
 
       
    <div

@@ -25,28 +25,28 @@ export async function generateMetadata(
   
 
   const brandName = toLabel(brand)
-  const description = `Generate emal receipts for ${brandName}  instantly.`
-  const logoUrl = `https://www.repsreceipts.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
-  
+  const description = `Generate a 1:1 ${brandName} email receipt instantly. Accurate ${brandName} receipt template — fill in your order details and download in seconds.`
+  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
+
   return {
-    title: `${brandName} 1:1 template, +70 brands `,
+    title: `${brandName} Receipt Generator — 1:1 Template | RepsReceipts`,
     description: description,
     keywords: [
-      `${brandName} template`,
       `${brandName} receipt`,
       `${brandName} receipt generator`,
+      `${brandName} receipt template`,
+      `${brandName} email receipt`,
       `${brandName} invoice template`,
       `${brandName.toLowerCase()} receipt maker`,
-      'free receipt generator',
-      'luxury brand receipts',
-   
+      'receipt generator',
+      'luxury brand receipt',
     ].join(', '),
     openGraph: {
-      title: `${brandName} 1:1 templates, +70 brands`,
+      title: `${brandName} Receipt Generator — 1:1 Template | RepsReceipts`,
       description: description,
       type: 'website',
       locale: 'en_US',
-      url: `https://www.repsreceipts.com/brands/${brand}`,
+      url: `https://www.repsreceipt.com/brands/${brand}`,
       siteName: 'RepReceipts',
       images: [
         {
@@ -59,12 +59,12 @@ export async function generateMetadata(
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${brandName} 1:1 template, +70 brands`,
+      title: `${brandName} Receipt Generator — 1:1 Template | RepsReceipts`,
       description: description,
       images: [logoUrl],
     },
     alternates: {
-      canonical: `https://www.repsreceipts.com/brands/${brand}`
+      canonical: `https://www.repsreceipt.com/brands/${brand}`
     },
     robots: {
       index: true,
@@ -121,20 +121,45 @@ export default function BrandPage({ params }: Props) {
   }
 
   const brandName = toLabel(brand)
-  const logoUrl = `https://www.repsreceipts.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
+  const logoUrl = `https://www.repsreceipt.com/brand-logos/${brand.toLowerCase().replace(/[^a-z0-9]/g, '_')}.png`
 
   // ✅ CORRECT: Page-specific structured data for THIS brand only
   // ✅ CORRECTO para SaaS - Service Schema apropiado
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.repsreceipt.com',
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Brands',
+      'item': 'https://www.repsreceipt.com/brands',
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': `${brandName} Receipt Generator`,
+      'item': `https://www.repsreceipt.com/brands/${brand}`,
+    },
+  ],
+}
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  'name': `${brandName} receipt template`,
-  'description': `Generate 1:1 ${brandName}`,
+  'name': `${brandName} Receipt Generator`,
+  'description': `Generate a 1:1 ${brandName} email receipt instantly.`,
   'image': logoUrl,
   'provider': {
     '@type': 'Organization',
     'name': 'RepReceipts',
-    'url': 'https://www.repsreceipts.com'
+    'url': 'https://www.repsreceipt.com'
   },
   'areaServed': 'Worldwide',
   'hasOfferCatalog': {
@@ -168,7 +193,10 @@ const structuredData = {
 
   return (
     <>
-      {/* ✅ Add structured data for THIS specific brand page */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -180,26 +208,28 @@ const structuredData = {
           {/* Receipts Examples Section */}
         <section style={{marginTop:'1%'}} className="receipts-examples">
           <div className="container">
+            <h1 style={{
+              textAlign: "center",
+              fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
+              fontWeight: 700,
+              color: "#1a1a1a",
+              marginBottom: 10,
+            }}>
+              {brandName} Receipt Generator
+            </h1>
 <div
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 200,
+              gap: 8,
               textAlign: "center",
               justifyContent: "center",
               width: '100%',
               fontSize:20
             }}
           >
-           
-
-       
-  
-
-            <a
+            <Link
               href="/brands"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{
                 padding: "3px 16px",
                 backgroundColor: "#5462ea",
@@ -209,10 +239,10 @@ const structuredData = {
                 textDecoration: "none",
               }}
             >
-              <p style={{ 
-                color: "white", 
-                fontWeight: "500", 
-                margin: 0, 
+              <p style={{
+                color: "white",
+                fontWeight: "500",
+                margin: 0,
                 fontSize: "16px",
                 display: "flex",
                 alignItems: "center",
@@ -221,7 +251,7 @@ const structuredData = {
               }}>
                 Some result examples, see all 69 brands <span style={{ fontSize: "14px" }}>↗</span>
               </p>
-            </a>
+            </Link>
           </div>
            
             
@@ -259,6 +289,45 @@ const structuredData = {
             <BrandReceiptGenerator preSelectedBrand={brand} />
           </Suspense>
         </div>
+
+        {/* SEO content section */}
+        <section style={{ maxWidth: 820, margin: '0 auto', padding: '48px 20px 40px' }}>
+          <h2 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#111', marginBottom: 12 }}>
+            About the {brandName} Receipt Template
+          </h2>
+          <p style={{ color: '#444', lineHeight: 1.8, marginBottom: 16 }}>
+            Our {brandName} receipt template is a 1:1 replica of the order confirmation email that {brandName} sends after a completed purchase. Every field, font, and layout element matches the genuine {brandName} receipt format so your document looks accurate and professional.
+          </p>
+
+          <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#111', marginBottom: 8, marginTop: 24 }}>
+            What the {brandName} receipt includes
+          </h3>
+          <ul style={{ color: '#444', lineHeight: 1.8, paddingLeft: 20, marginBottom: 16 }}>
+            <li>Order number and purchase date</li>
+            <li>Product name, size, and quantity</li>
+            <li>Item price, taxes, and total amount</li>
+            <li>Shipping address and estimated delivery date</li>
+            <li>Payment method summary</li>
+          </ul>
+
+          <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#111', marginBottom: 8, marginTop: 24 }}>
+            How to generate your {brandName} receipt
+          </h3>
+          <ol style={{ color: '#444', lineHeight: 1.8, paddingLeft: 20, marginBottom: 16 }}>
+            <li>Fill in the product name and any relevant size or style information above.</li>
+            <li>Enter your order number, purchase date, and total price.</li>
+            <li>Add your shipping address and payment method details.</li>
+            <li>Click Generate to create and download your {brandName} receipt instantly.</li>
+          </ol>
+
+          <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#111', marginBottom: 8, marginTop: 24 }}>
+            Other brands available
+          </h3>
+          <p style={{ color: '#444', lineHeight: 1.8 }}>
+            RepsReceipts supports 70+ luxury and streetwear brands. If you need a receipt for another brand,{' '}
+            <a href="/brands" style={{ color: '#5462ea' }}>browse the full brand directory</a>.
+          </p>
+        </section>
 
         <Footer/>
       </main>

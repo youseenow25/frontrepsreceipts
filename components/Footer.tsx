@@ -158,15 +158,14 @@ const Footer = () => {
 
         {/* Policies */}
         <div className="text-white/90 flex flex-wrap justify-center gap-4">
-          <a href="#" className="hover:underline">Privacy Policy</a>
-          <a href="#" className="hover:underline">Refund Policy</a>
-          <a href="#" className="hover:underline">Cookie Preferences</a>
-          <a href="#" className="hover:underline">Terms of Service</a>
+          <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+          <Link href="/refund" className="hover:underline">Refund Policy</Link>
+          <Link href="/terms" className="hover:underline">Terms of Service</Link>
         </div>
       </div>
 
       <div className="mt-6 text-center text-white/90 text-xs">
-        ©2025, RepReceipt - Professional Receipt Generator
+        ©2026 RepsReceipts — Professional Receipt Generator
       </div>
 
       <div className="mt-2 text-center text-white/90 text-sm">

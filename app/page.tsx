@@ -36,6 +36,50 @@ export default function Page() {
   return (
     <>
   
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What brands does RepsReceipts support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "RepsReceipts supports 70+ brands including StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior, Balenciaga, Off-White, Supreme, Hermès, Prada, Chanel, Moncler, and many more luxury and streetwear brands."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I generate a receipt with RepsReceipts?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simply select your brand, fill in the order details such as item name, price, order number and delivery address, then click generate. Your receipt is created instantly and can be downloaded."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is RepsReceipts free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "RepsReceipts offers a free tier as well as a premium plan at $4.99 that unlocks advanced features and all brand templates."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I generate a StockX receipt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. RepsReceipts has a 1:1 StockX receipt template. Select StockX from the brand list, enter your order details, and generate your receipt in seconds."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
       <main className="main">
         <div className="luxury-radial" aria-hidden />
         <Header />
@@ -43,6 +87,15 @@ export default function Page() {
         {/* Receipts Examples Section */}
         <section className="receipts-examples">
           <div className="container">
+            <h1 style={{
+              textAlign: "center",
+              fontSize: "clamp(1.6rem, 3vw, 2.4rem)",
+              fontWeight: 700,
+              marginBottom: 12,
+              color: "#1a1a1a",
+            }}>
+              Receipt Generator for StockX, Nike, Farfetch &amp; 70+ Brands
+            </h1>
 <div
             style={{
               display: "flex",
@@ -54,15 +107,8 @@ export default function Page() {
               fontSize:20
             }}
           >
-           
-
-       
-  
-
-            <a
+            <Link
               href="/brands"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{
                 padding: "3px 16px",
                 backgroundColor: "#5462ea",
@@ -72,10 +118,10 @@ export default function Page() {
                 textDecoration: "none",
               }}
             >
-              <p style={{ 
-                color: "white", 
-                fontWeight: "500", 
-                margin: 0, 
+              <p style={{
+                color: "white",
+                fontWeight: "500",
+                margin: 0,
                 fontSize: "16px",
                 display: "flex",
                 alignItems: "center",
@@ -84,7 +130,7 @@ export default function Page() {
               }}>
                 Some result examples, see all 69 brands <span style={{ fontSize: "14px" }}>↗</span>
               </p>
-            </a>
+            </Link>
           </div>
            
             

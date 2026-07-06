@@ -4,17 +4,17 @@ import { Analytics } from "@vercel/analytics/react"
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Generate StockX, Farfetch, +70 brands receipts',
-  description: 'Create realistic receipts for StockX, Louis Vuitton, Dior, Gucci, Nike, Supreme, Balenciaga, Off-White & 100+ premium brands. Professional receipt generator for luxury documentation and purchase verification.',
-  metadataBase: new URL('https://www.repsreceipts.com'),
+  title: 'Receipt Generator — StockX, Nike, Farfetch & 70+ Brands | RepsReceipts',
+  description: 'Instantly generate 1:1 email receipts for StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior & 70+ luxury and streetwear brands. Fast, accurate receipt templates.',
+  metadataBase: new URL('https://www.repsreceipt.com'),
   alternates: {
     canonical: '/',
   },
   
   openGraph: {
-    title: 'StockX, Farfetch, Canada Goose +70 brands receipt',
-    description: 'Generate receipts for StockX, Farfetch, Canada Goose +70 brands.',
-    url: 'https://www.repsreceipts.com',
+    title: 'Receipt Generator — StockX, Nike, Farfetch & 70+ Brands | RepsReceipts',
+    description: 'Instantly generate 1:1 email receipts for StockX, Nike, Louis Vuitton, Farfetch & 70+ luxury and streetwear brands.',
+    url: 'https://www.repsreceipt.com',
     siteName: 'RepsReceipts',
     images: [
       {
@@ -30,24 +30,26 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'RepsReceipts - Receipt Generator',
-    description: 'Generate receipts for StockX, Farfetch +70 brands',
+    title: 'Receipt Generator — StockX, Nike, Farfetch & 70+ Brands | RepsReceipts',
+    description: 'Instantly generate 1:1 email receipts for StockX, Nike, Louis Vuitton, Farfetch & 70+ luxury and streetwear brands.',
     images: ['/og-image.jpg'],
   },
 
   keywords: [
     'receipt generator',
-    'luxury brand receipts', 
+    'email receipt generator',
+    'luxury brand receipts',
+    'receipt template',
     'invoice generator',
-    'stockx receipt',
-    'nike receipt',
+    'stockx receipt generator',
+    'nike receipt generator',
+    'farfetch receipt',
     'louis vuitton receipt',
+    'canada goose receipt',
     'receipt maker',
-    'fake receipt generator',
-    'email receipt',
-    'professional receipts',
+    'streetwear receipt generator',
     'luxury fashion receipts',
-    'streetwear receipts'
+    'brand receipt template',
   ],
   authors: [{ name: 'RepsReceipts' }],
   creator: 'RepsReceipts',
@@ -159,12 +161,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "WebSite", 
               "name": "RepsReceipts",
-              "url": "https://www.repsreceipts.com",
+              "url": "https://www.repsreceipt.com",
               "description": "SaaS platform for generating authentic receipts for 100+ luxury and streetwear brands",
-              "thumbnailUrl": "https://www.repsreceipts.com/og-image.jpg",
+              "thumbnailUrl": "https://www.repsreceipt.com/og-image.jpg",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://www.repsreceipts.com/search?q={search_term_string}",
+                "target": "https://www.repsreceipt.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })
@@ -179,8 +181,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "RepsReceipts",
-              "url": "https://www.repsreceipts.com",
-              "logo": "https://www.repsreceipts.com/logo.png",
+              "url": "https://www.repsreceipt.com",
+              "logo": "https://www.repsreceipt.com/logo.png",
               "description": "SaaS platform providing professional receipt generation services for luxury brands",
               "sameAs": [],
               "address": {
@@ -210,13 +212,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "operatingSystem": "Web Browser",
               "permissions": "InternetConnection",
               "description": "SaaS platform for generating authentic receipts for 100+ luxury and streetwear brands",
-              "url": "https://www.repsreceipts.com",
-              "image": "https://www.repsreceipts.com/og-image.jpg",
+              "url": "https://www.repsreceipt.com",
+              "image": "https://www.repsreceipt.com/og-image.jpg",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
                 "priceCurrency": "USD",
-                "priceValidUntil": "2025-12-31"
+                "priceValidUntil": "2027-12-31"
               },
               "author": {
                 "@type": "Organization",
@@ -234,7 +236,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "Service",
               "serviceType": "Digital Receipt Generation",
-              "image": "https://www.repsreceipts.com/og-image.jpg",
+              "image": "https://www.repsreceipt.com/og-image.jpg",
               "provider": {
                 "@type": "Organization",
                 "name": "RepsReceipt"

@@ -14,11 +14,36 @@ function toLabel(name: string): string {
 }
 
 export const metadata: Metadata = {
-  title: 'Browse All Brand Receipt Generators | RepsReceipts',
+  title: 'All Brand Receipt Templates — StockX, Nike, Louis Vuitton & 70+ | RepsReceipts',
   description:
-    'Access individual receipt generators for 100+ luxury and streetwear brands. Jump directly to Apple, Nike, Louis Vuitton, StockX, and more.',
+    'Browse receipt templates for 70+ luxury and streetwear brands: StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior, Balenciaga and more. Pick your brand and generate instantly.',
+  keywords: [
+    'brand receipt templates',
+    'stockx receipt template',
+    'nike receipt template',
+    'louis vuitton receipt template',
+    'luxury brand receipt generator',
+    'streetwear receipt templates',
+    'farfetch receipt',
+    'canada goose receipt',
+  ],
   alternates: {
     canonical: '/brands',
+  },
+  openGraph: {
+    title: 'All Brand Receipt Templates — 70+ Brands | RepsReceipts',
+    description: 'Browse receipt templates for 70+ luxury and streetwear brands. StockX, Nike, Louis Vuitton, Farfetch & more.',
+    url: 'https://www.repsreceipt.com/brands',
+    siteName: 'RepsReceipts',
+    images: [{ url: '/og-image.jpg', width: 1150, height: 600, alt: 'RepsReceipts Brand Directory' }],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'All Brand Receipt Templates — 70+ Brands | RepsReceipts',
+    description: 'Browse receipt templates for 70+ luxury and streetwear brands.',
+    images: ['/og-image.jpg'],
   },
 }
 
@@ -32,32 +57,24 @@ export default function BrandsIndexPage() {
         <section className="brands-directory">
           <div className="container centered">
            
-            <a
-              href="/brands"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                padding: "3px 16px",
-                backgroundColor: "#5462ea",
-                display: "flex",
-                alignItems: "center",
-                cursor: "pointer",
-                textDecoration: "none",
-              }}
-            >
-              <p style={{ 
-                color: "white", 
-                fontWeight: "500", 
-                margin: 0, 
-                fontSize: "16px",
-                display: "flex",
-                alignItems: "center",
-                gap: 4,
-                whiteSpace: "nowrap"
-              }}>
-                All our brands available <span style={{ fontSize: "14px" }}></span>
-              </p>
-            </a>
+            <h1 style={{
+              fontSize: "clamp(1.8rem, 3vw, 2.6rem)",
+              fontWeight: 700,
+              color: "#111",
+              marginBottom: 8,
+              textAlign: "center",
+            }}>
+              All Brand Receipt Templates
+            </h1>
+            <p style={{
+              fontSize: "1.05rem",
+              color: "#555",
+              maxWidth: 600,
+              marginBottom: 20,
+              textAlign: "center",
+            }}>
+              Choose a brand below to open its dedicated receipt generator. 70+ luxury and streetwear brands available.
+            </p>
           
 
             <div style={{marginTop:20}} className="brands-directory-grid">
