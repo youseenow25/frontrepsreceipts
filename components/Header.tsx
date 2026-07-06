@@ -126,7 +126,7 @@ export default function Header() {
           width={60} 
           height={60} 
           alt="RepReceipts logo" 
-          src={"/logoheader.png"}
+          src={"/logo.png"}
           priority
         />
       </button>
@@ -301,7 +301,7 @@ export default function Header() {
               width={110} 
               height={110} 
               alt="RepReceipts logo" 
-              src={'/hublogo.png'}
+              src={'/logo.png'}
               priority
             />
           </button>
@@ -339,7 +339,7 @@ export default function Header() {
             width={isMobile ? 60 : 90} 
             height={isMobile ? 60 : 90} 
             alt="RepReceipts logo" 
-            src={'/logoheader.png'}
+            src={'/logo.png'}
             priority
           />
         </button>
