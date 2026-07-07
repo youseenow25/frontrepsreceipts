@@ -144,7 +144,10 @@ export default function ReceiptBrandPage({ params }: Props) {
       <main className="main">
         <div className="luxury-radial" aria-hidden />
         <Header />
-        <ReceiptExamplesHero />
+        <ReceiptExamplesHero
+          title={`${brandName} Receipt Template — Download as PDF`}
+          subtitle={`Create a print-ready ${brandName} receipt with brand formatting and itemized lines, then download it as a PDF in seconds.`}
+        />
         <Hero brandName={`${brandName} Receipt Template`} />
 
         <div style={{ width: '100%' }}>

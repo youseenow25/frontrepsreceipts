@@ -8,10 +8,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/next"
 import StructuredData from "@/components/StructuredData";
-
-const brands = [
-  "apple", "gucci", "stockx", "nike", "flightclub", "louisvuitton", "saintlaurent","trapstar"
-]
+import { exampleBrands } from "@/lib/exampleBrands";
 
 function toLabel(name: string): string {
   const special: Record<string, string> = {
@@ -48,7 +45,7 @@ export default function Page() {
                 "name": "What brands does RepsReceipts support?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "RepsReceipts supports 70+ brands including StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior, Balenciaga, Off-White, Supreme, Hermès, Prada, Chanel, Moncler, and many more luxury and streetwear brands."
+                  "text": "RepsReceipts supports 60+ brands including StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior, Balenciaga, Off-White, Hermès, Prada, Chanel, Moncler, and many more luxury and streetwear brands."
                 }
               },
               {
@@ -94,7 +91,7 @@ export default function Page() {
               marginBottom: 12,
               color: "#1a1a1a",
             }}>
-              Receipt Generator for StockX, Nike, Farfetch &amp; 70+ Brands
+              Receipt Generator for StockX, Nike, Farfetch &amp; 60+ Brands
             </h1>
 <div
             style={{
@@ -128,24 +125,24 @@ export default function Page() {
                 gap: 4,
                 whiteSpace: "nowrap"
               }}>
-                Some result examples, see all 69 brands <span style={{ fontSize: "14px" }}>↗</span>
+                Some result examples, see all 60+ brands <span style={{ fontSize: "14px" }}>↗</span>
               </p>
             </Link>
           </div>
            
             
             <div style={{marginTop:10}} className="receipts-grid">
-              {brands.map((brand, index) => (
+              {exampleBrands.map((brand, index) => (
                 <Link
-                  key={brand}
-                  href={`/brands/${brand}`}
+                  key={brand.key}
+                  href={`/brands/${brand.key}`}
                   className="receipt-card"
-                  aria-label={`View the ${toLabel(brand)} receipt generator`}
+                  aria-label={`View the ${brand.label} receipt generator`}
                 >
                   <div className="receipt-image" style={{width:120,height:160,flexShrink:0}}>
                     <Image
-                      src={`/${brand}_example.png`}
-                      alt={`${toLabel(brand)} receipt example`}
+                      src={brand.img}
+                      alt={`${brand.label} receipt example`}
                       width={120}
                       height={160}
                       priority={index < 4}
@@ -177,7 +174,7 @@ export default function Page() {
               <div className="feature-card">
                 <div className="feature-icon">🎨</div>
                 <h3>1:1 Receipts</h3>
-                <p>StockX,Farfethc, Apple, Canada Goose +70 other luxury brand receipts.</p>
+                <p>StockX, Farfetch, Apple, Canada Goose and 60+ other luxury brand receipts.</p>
               </div>
               
               <div className="feature-card">

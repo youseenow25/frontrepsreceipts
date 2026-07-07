@@ -119,7 +119,7 @@ export default function BlogPost({ params }: Props) {
               Ready to generate your receipt?
             </p>
             <p style={{ color: '#555', marginBottom: 16, fontSize: '0.95rem' }}>
-              Choose from 70+ brand templates and create your receipt in seconds.
+              Choose from 60+ brand templates and create your receipt in seconds.
             </p>
             <Link
               href="/brands"

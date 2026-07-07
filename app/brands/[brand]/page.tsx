@@ -9,6 +9,7 @@ import Link from 'next/link';
 
 import Image from 'next/image'
 import Footer from '@/components/Footer'
+import { exampleBrands } from '@/lib/exampleBrands'
 
 type Props = {
   params: { brand: string }
@@ -112,10 +113,6 @@ export default function BrandPage({ params }: Props) {
   const brand = params.brand
   const brandData = brandsSchema.brands[brand]
 
-  const brands = [
-  "apple", "gucci", "stockx", "nike", "flightclub", "louisvuitton", "saintlaurent","trapstar"
-]
-  
   if (!brandData) {
     notFound()
   }
@@ -249,24 +246,24 @@ const structuredData = {
                 gap: 4,
                 whiteSpace: "nowrap"
               }}>
-                Some result examples, see all 69 brands <span style={{ fontSize: "14px" }}>↗</span>
+                Some result examples, see all 60+ brands <span style={{ fontSize: "14px" }}>↗</span>
               </p>
             </Link>
           </div>
            
             
             <div style={{marginTop:10}} className="receipts-grid">
-              {brands.map((brand) => (
+              {exampleBrands.map((ex) => (
                 <Link
-                  key={brand}
-                  href={`/brands/${brand}`}
+                  key={ex.key}
+                  href={`/brands/${ex.key}`}
                   className="receipt-card"
-                  aria-label={`View the ${toLabel(brand)} receipt generator`}
+                  aria-label={`View the ${ex.label} receipt generator`}
                 >
                   <div className="receipt-image">
                     <Image
-                      src={`/${brand}_example.png`}
-                      alt={`${toLabel(brand)} receipt example`}
+                      src={ex.img}
+                      alt={`${ex.label} receipt example`}
                       width={120}
                       height={160}
                       style={{
@@ -324,7 +321,7 @@ const structuredData = {
             Other brands available
           </h3>
           <p style={{ color: '#444', lineHeight: 1.8 }}>
-            RepsReceipts supports 70+ luxury and streetwear brands. If you need a receipt for another brand,{' '}
+            RepsReceipts supports 60+ luxury and streetwear brands. If you need a receipt for another brand,{' '}
             <a href="/brands" style={{ color: '#5462ea' }}>browse the full brand directory</a>.
           </p>
         </section>

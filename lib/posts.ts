@@ -10,12 +10,12 @@ export const posts: Post[] = [
   {
     slug: 'how-to-generate-luxury-brand-receipt',
     title: 'How to Generate a Luxury Brand Receipt: Complete Guide',
-    description: 'Step-by-step guide to generating accurate receipts for StockX, Louis Vuitton, Nike, Farfetch, Gucci and 70+ brands. What fields each receipt needs and why.',
+    description: 'Step-by-step guide to generating accurate receipts for StockX, Louis Vuitton, Nike, Farfetch, Gucci and 60+ brands. What fields each receipt needs and why.',
     date: '2026-03-28',
     content: `
 <h2>Why People Need a Duplicate Receipt</h2>
 <p>Losing a confirmation email is more common than most people admit — a spam filter catches it, a phone gets replaced, or an account gets deleted. Beyond lost emails, there are plenty of legitimate reasons to need a receipt document: insurance valuations for high-value items, expense reporting for business purchases, providing proof of retail price when reselling, or warranty registration that requires the original purchase date and store.</p>
-<p>RepsReceipts generates 1:1 receipt documents for 70+ brands so you have the documentation you need without waiting on customer support.</p>
+<p>RepsReceipts generates 1:1 receipt documents for 60+ brands so you have the documentation you need without waiting on customer support.</p>
 
 <h2>What Every Retail Receipt Has in Common</h2>
 <p>Despite the wildly different aesthetics of a StockX confirmation versus a Hermès invoice, every receipt covers the same core information: an order or transaction reference, the date of purchase, a description of what was bought (name, size, quantity), a price breakdown showing subtotal, tax, and shipping, and a record of how payment was made. The differences are purely visual — layout, typography, logo placement, colour palette.</p>

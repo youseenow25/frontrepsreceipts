@@ -1,48 +1,41 @@
 import Image from "next/image";
 import Link from "next/link";
+import { exampleBrands } from "@/lib/exampleBrands";
 
-const brands = [
-  "apple", "gucci", "stockx", "nike", "flightclub", "louisvuitton", "saintlaurent", "trapstar"
-];
+type Props = {
+  title?: string;
+  subtitle?: string;
+};
 
-function toLabel(name: string): string {
-  const special: Record<string, string> = {
-    stockx: "StockX",
-    louisvuitton: "Louis Vuitton",
-    saintlaurent: "Saint Laurent",
-    flightclub: "Flight Club",
-    trapstar: "Trapstar",
-  };
-  if (special[name]) return special[name];
-  return name.charAt(0).toUpperCase() + name.slice(1);
-}
-
-export default function ReceiptExamplesHero() {
+export default function ReceiptExamplesHero({
+  title = "Receipt Generator for StockX, Nike, Louis Vuitton & 60+ Brands",
+  subtitle = "Create professional email receipts, printable templates and PDF invoices for over 60 luxury and streetwear brands. Free online receipt maker.",
+}: Props) {
   return (
     <>
       <section className="container" style={{ padding: '24px 20px 0 20px', textAlign: 'center' }}>
         <h1 className="seo-h1">
-          Receipt Generator for StockX, Nike, Louis Vuitton & 100+ Brands
+          {title}
         </h1>
         <p style={{ maxWidth: 760, margin: '0 auto', color: '#444', fontSize: '1rem', lineHeight: 1.6 }}>
-          Create professional email receipts, printable templates and PDF invoices for over 100 luxury and streetwear brands. Free online receipt maker.
+          {subtitle}
         </p>
       </section>
 
       <section className="receipts-examples">
         <div className="container">
           <div className="receipts-grid">
-            {brands.map((brand, index) => (
+            {exampleBrands.map((brand, index) => (
               <Link
-                key={brand}
-                href={`/brands/${brand}`}
+                key={brand.key}
+                href={`/brands/${brand.key}`}
                 className="receipt-card"
-                aria-label={`View the ${toLabel(brand)} receipt generator`}
+                aria-label={`View the ${brand.label} receipt generator`}
               >
                 <div className="receipt-image">
                   <Image
-                    src={`/${brand}_example.png`}
-                    alt={`${toLabel(brand)} receipt example`}
+                    src={brand.img}
+                    alt={`${brand.label} receipt example`}
                     width={120}
                     height={160}
                     loading={index < 4 ? "eager" : "lazy"}

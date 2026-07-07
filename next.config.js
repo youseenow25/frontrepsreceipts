@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ['api.repsreceipt.com', 'www.repsreceipt.com'],
+    domains: ['api.repsreceipt.com', 'www.repsreceipt.com', 'lh3.googleusercontent.com'],
   },
   async redirects() {
     return [
@@ -14,6 +14,18 @@ const nextConfig = {
       { source: '/brands/supreme', destination: '/brands', permanent: true },
       { source: '/brands/nike_snkrs', destination: '/brands/nike', permanent: true },
       { source: '/brands/yeezy_gap', destination: '/brands/adidas', permanent: true },
+
+      // The example-receipt strips used to link to slugs without underscores;
+      // those URLs 404ed sitewide and Google crawled them
+      { source: '/brands/flightclub', destination: '/brands/flight_club', permanent: true },
+      { source: '/brands/louisvuitton', destination: '/brands/louis_vuitton', permanent: true },
+      { source: '/brands/saintlaurent', destination: '/brands/saint_laurent', permanent: true },
+      { source: '/receipt/flightclub', destination: '/receipt/flight_club', permanent: true },
+      { source: '/receipt/louisvuitton', destination: '/receipt/louis_vuitton', permanent: true },
+      { source: '/receipt/saintlaurent', destination: '/receipt/saint_laurent', permanent: true },
+      { source: '/email-receipt/flightclub', destination: '/email-receipt/flight_club', permanent: true },
+      { source: '/email-receipt/louisvuitton', destination: '/email-receipt/louis_vuitton', permanent: true },
+      { source: '/email-receipt/saintlaurent', destination: '/email-receipt/saint_laurent', permanent: true },
 
       // Old domain path redirects (repsreceipts.com → repsreceipt.com already handled at DNS level)
       // These handle URL structure changes that caused 119 404s in Google Search Console

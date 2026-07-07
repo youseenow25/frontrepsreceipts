@@ -144,7 +144,10 @@ export default function EmailReceiptBrandPage({ params }: Props) {
       <main className="main">
         <div className="luxury-radial" aria-hidden />
         <Header />
-        <ReceiptExamplesHero />
+        <ReceiptExamplesHero
+          title={`${brandName} Email Receipt Generator — Order Confirmation`}
+          subtitle={`Build a ${brandName} order confirmation email receipt with the correct layout, branding, and fields, ready in seconds.`}
+        />
         <Hero brandName={`${brandName} Email Receipt`} />
 
         <div style={{ width: '100%' }}>

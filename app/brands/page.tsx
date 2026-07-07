@@ -14,9 +14,9 @@ function toLabel(name: string): string {
 }
 
 export const metadata: Metadata = {
-  title: 'All Brand Receipt Templates — StockX, Nike, Louis Vuitton & 70+ | RepsReceipts',
+  title: 'All Brand Receipt Templates — StockX, Nike, Louis Vuitton & 60+ | RepsReceipts',
   description:
-    'Browse receipt templates for 70+ luxury and streetwear brands: StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior, Balenciaga and more. Pick your brand and generate instantly.',
+    'Browse receipt templates for 60+ luxury and streetwear brands: StockX, Nike, Louis Vuitton, Farfetch, Canada Goose, Gucci, Dior, Balenciaga and more. Pick your brand and generate instantly.',
   keywords: [
     'brand receipt templates',
     'stockx receipt template',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: '/brands',
   },
   openGraph: {
-    title: 'All Brand Receipt Templates — 70+ Brands | RepsReceipts',
-    description: 'Browse receipt templates for 70+ luxury and streetwear brands. StockX, Nike, Louis Vuitton, Farfetch & more.',
+    title: 'All Brand Receipt Templates — 60+ Brands | RepsReceipts',
+    description: 'Browse receipt templates for 60+ luxury and streetwear brands. StockX, Nike, Louis Vuitton, Farfetch & more.',
     url: 'https://www.repsreceipt.com/brands',
     siteName: 'RepsReceipts',
     images: [{ url: '/og-image.jpg', width: 1150, height: 600, alt: 'RepsReceipts Brand Directory' }],
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'All Brand Receipt Templates — 70+ Brands | RepsReceipts',
-    description: 'Browse receipt templates for 70+ luxury and streetwear brands.',
+    title: 'All Brand Receipt Templates — 60+ Brands | RepsReceipts',
+    description: 'Browse receipt templates for 60+ luxury and streetwear brands.',
     images: ['/og-image.jpg'],
   },
 }
@@ -73,7 +73,7 @@ export default function BrandsIndexPage() {
               marginBottom: 20,
               textAlign: "center",
             }}>
-              Choose a brand below to open its dedicated receipt generator. 70+ luxury and streetwear brands available.
+              Choose a brand below to open its dedicated receipt generator. 60+ luxury and streetwear brands available.
             </p>
           
 

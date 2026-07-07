@@ -4,8 +4,8 @@ import { Analytics } from "@vercel/analytics/react"
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'RepReceipts - Receipt Generator for 100+ Luxury & Streetwear Brands',
-  description: 'Professional receipt generator for StockX, Louis Vuitton, Dior, Gucci, Nike, Supreme, Balenciaga & 100+ brands. Create receipt templates, email confirmations and order documentation instantly.',
+  title: 'RepReceipts - Receipt Generator for 60+ Luxury & Streetwear Brands',
+  description: 'Professional receipt generator for StockX, Louis Vuitton, Dior, Gucci, Nike, Balenciaga & 60+ brands. Create receipt templates, email confirmations and order documentation instantly.',
   metadataBase: new URL('https://www.repsreceipt.com'),
   alternates: {
     canonical: '/',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: 'RepReceipts - Receipt Generator for Luxury & Streetwear Brands',
-    description: 'Professional receipt generator for 100+ luxury and streetwear brands. Create receipt templates, email confirmations and invoices instantly.',
+    description: 'Professional receipt generator for 60+ luxury and streetwear brands. Create receipt templates, email confirmations and invoices instantly.',
     url: 'https://www.repsreceipt.com',
     siteName: 'RepReceipts',
     images: [
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'RepReceipts - Receipt Generator for 100+ Brands',
-    description: 'Professional receipt generator for 100+ luxury and streetwear brands. Create templates, email confirmations and invoices.',
+    title: 'RepReceipts - Receipt Generator for 60+ Brands',
+    description: 'Professional receipt generator for 60+ luxury and streetwear brands. Create templates, email confirmations and invoices.',
     images: ['/og-image.jpg'],
   },
 
@@ -134,23 +134,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
-
-        {/* Favicons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
-        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/android-chrome-192x192.png" type="image/png" sizes="192x192" />
-        <link rel="icon" href="/android-chrome-512x512.png" type="image/png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-        <link rel="manifest" href="/site.webmanifest" />
-
         {/* Theme colors */}
         <meta name="theme-color" content="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
-        <meta name="msapplication-config" content="/browserconfig.xml" />
 
         {/* OG extras */}
         <meta property="og:image:width" content="1200" />
@@ -168,7 +154,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "WebSite",
               "name": "RepReceipts",
               "url": "https://www.repsreceipt.com",
-              "description": "Professional receipt generator platform for 100+ luxury and streetwear brands",
+              "description": "Professional receipt generator platform for 60+ luxury and streetwear brands",
               "thumbnailUrl": "https://www.repsreceipt.com/og-image.jpg",
               "potentialAction": {
                 "@type": "ViewAction",
@@ -188,7 +174,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "Organization",
               "name": "RepReceipts",
               "url": "https://www.repsreceipt.com",
-              "logo": "https://www.repsreceipt.com/logoheader.png",
+              "logo": "https://www.repsreceipt.com/logo.png",
               "description": "Professional receipt generation platform for luxury and streetwear brands",
               "sameAs": [],
               "address": {
@@ -217,7 +203,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web Browser",
               "permissions": "InternetConnection",
-              "description": "Professional receipt generator platform for 100+ luxury and streetwear brands",
+              "description": "Professional receipt generator platform for 60+ luxury and streetwear brands",
               "url": "https://www.repsreceipt.com",
               "image": "https://www.repsreceipt.com/og-image.jpg",
               "offers": {

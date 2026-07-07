@@ -5,13 +5,13 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About RepReceipts - Professional Receipt Generator Platform',
-  description: 'RepReceipts is a professional receipt generator platform supporting 100+ luxury and streetwear brands. Learn about our mission, features, and how we help businesses create professional receipts.',
+  description: 'RepReceipts is a professional receipt generator platform supporting 60+ luxury and streetwear brands. Learn about our mission, features, and how we help businesses create professional receipts.',
   alternates: {
     canonical: '/about',
   },
   openGraph: {
     title: 'About RepReceipts - Receipt Generator Platform',
-    description: 'Learn about RepReceipts, the professional receipt generator for 100+ luxury and streetwear brands.',
+    description: 'Learn about RepReceipts, the professional receipt generator for 60+ luxury and streetwear brands.',
     url: 'https://www.repsreceipt.com/about',
     type: 'website',
   },
@@ -44,7 +44,7 @@ export default function AboutPage() {
         <section style={{ marginBottom: '40px' }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '16px' }}>Key Features</h2>
           <ul style={{ lineHeight: 1.9, color: '#ccc', paddingLeft: '20px' }}>
-            <li>Receipt templates for 100+ luxury and streetwear brands</li>
+            <li>Receipt templates for 60+ luxury and streetwear brands</li>
             <li>Email receipt and order confirmation formats</li>
             <li>PDF and printable receipt export</li>
             <li>Multi-currency support for international formatting</li>
