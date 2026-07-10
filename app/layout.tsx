@@ -114,6 +114,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
         />
 
+        {/* Google Analytics GA4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F8LMW32NER"
+          strategy="afterInteractive"
+        />
+
         {/* Ahrefs Analytics */}
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
@@ -128,6 +134,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-17728207333');
+              gtag('config', 'G-F8LMW32NER');
             } catch(e) {
               console.error('Google Analytics initialization error:', e);
             }
